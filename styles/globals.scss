@@ -1,0 +1,20 @@
+@import '../public/vendor/fonts.scss';
+@import './variables.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Lora', 'Times New Roman', sans-serif;
+  color: $main-text;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

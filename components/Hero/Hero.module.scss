@@ -1,0 +1,41 @@
+@import 'styles/variables.scss';
+
+.hero {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url('/images/moscow_hero.jpg') 50% 20% / cover no-repeat;
+
+  &__text {
+    text-align: center;
+    color: $main-bright;
+  }
+
+  &__title {
+    margin: 0 1em;
+
+    background-color: $main-yellow;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin: .1em 1em 0;
+
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__age {
+    margin-top: 2em;
+
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+}

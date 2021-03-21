@@ -17,7 +17,7 @@
   &__title {
     margin: 0 1em;
 
-    background-color: $main-yellow;
+    background-color: $main-accent;
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
@@ -32,7 +32,7 @@
   }
 
   &__age {
-    margin-top: 2em;
+    margin: 2em 0;
 
     font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
     font-weight: 300;

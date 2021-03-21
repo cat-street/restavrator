@@ -1,0 +1,39 @@
+@import 'styles/variables.scss';
+
+.button {
+  border: 0;
+  border-radius: 7px;
+  padding: .6em 2em;
+
+  font-family: inherit;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  transition: all 200ms;
+  cursor: pointer;
+
+  &__regular {
+    color: $main-text;
+    background-color: $main-accent;
+
+    &:hover {
+      opacity: .75;
+    }
+  }
+
+  &__outline {
+    color: $main-bright;
+    background-color: transparent;
+    border: 1px solid $main-bright;
+
+    &:hover {
+      color: $main-text;
+      background-color: $main-accent;
+      border-color: $main-accent;
+    }
+  }
+
+  &__small {
+    font-size: 14px;
+  }
+}

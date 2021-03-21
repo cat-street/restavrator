@@ -8,10 +8,38 @@
     gap: 32px;
 
     list-style: none;
+  }
+
+  &__link {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: transparent;
 
     color: $main-bright;
+    font-family: inherit;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: color 200ms;
+
+    &:hover {
+      color: $main-accent;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px dotted $main-bright;
+    }
+
+    &_active {
+      color: $main-accent;
+    }
   }
 }

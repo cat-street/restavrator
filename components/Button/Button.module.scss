@@ -11,6 +11,10 @@
   transition: all 200ms;
   cursor: pointer;
 
+  &:focus {
+    outline: $main-bright dotted 1px;
+  }
+
   &__regular {
     padding: 12px 36px;
 

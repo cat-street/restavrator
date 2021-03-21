@@ -2,14 +2,11 @@ import React, { PropsWithChildren } from 'react';
 import getStyles from '../../utils/getStyles';
 import styles from './Button.module.scss';
 
-type Props = {
+type Props = PropsWithChildren<{
   buttonStyles: Array<string> | string;
-};
+}>;
 
-function Button({
-  buttonStyles,
-  children,
-}: PropsWithChildren<Props>): JSX.Element {
+function Button({ buttonStyles, children }: Props): JSX.Element {
   return (
     <button
       type="button"

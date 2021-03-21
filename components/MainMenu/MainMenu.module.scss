@@ -1,0 +1,17 @@
+@import 'styles/variables.scss';
+
+.main-menu {
+  flex-shrink: 0;
+
+  &__list {
+    display: flex;
+    gap: 32px;
+
+    list-style: none;
+
+    color: $main-bright;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

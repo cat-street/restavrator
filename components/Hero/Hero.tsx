@@ -11,7 +11,7 @@ function Hero(): JSX.Element {
         </h1>
         <p className={styles.hero__subtitle}>Исследования. Проекты. Надзор.</p>
         <p className={styles.hero__age}>Мы работаем с 1991 года</p>
-        <Button buttonStyles={['button__outline', 'button__small']}>
+        <Button buttonStyles={['button_style_outline', 'button_size_small']}>
           О компании
         </Button>
       </div>

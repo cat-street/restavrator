@@ -1,3 +1,15 @@
-$main-accent: #E2B13C;
+$main-accent: #e2b13c;
 $main-text: #343434;
 $main-bright: #fff;
+$secondary-bg: #f3f6f9;
+
+$side-padding: 48px;
+$vertical-padding: 90px;
+
+$text-font-size: 16px;
+$secondary-font: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+
+@mixin focus-outline($color) {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba($color, $alpha: 0.7);
+}

@@ -18,3 +18,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+*:focus:not(.focus-visible) {
+  outline: none;
+}

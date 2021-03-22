@@ -1,17 +1,20 @@
 @import 'styles/variables.scss';
 
 .main-menu {
+  height: 100%;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 
   &__list {
+    height: 100%;
     display: flex;
-    gap: 32px;
-
-    list-style: none;
+    margin-right: -12px;
   }
 
   &__link {
-    padding: 0;
+    height: 100%;
+    padding: 0 12px;
     margin: 0;
     box-sizing: border-box;
 
@@ -33,9 +36,8 @@
       color: $main-accent;
     }
 
-    &:focus {
-      outline: none;
-      border: 1px dotted $main-bright;
+    &:focus-visible {
+      @include focus-outline($main-bright);
     }
 
     &_active {

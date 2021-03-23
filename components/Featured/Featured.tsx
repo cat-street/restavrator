@@ -1,6 +1,7 @@
 // import Link from 'next/link';
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 import ContentContainer from '../ContentContainer/ContentContainer';
 import styles from './Featured.module.scss';
@@ -13,19 +14,23 @@ function Featured(): JSX.Element {
         <ul className={styles.featured__list}>
           <li className={styles.featured__item}>
             <div className={styles['featured__image-container']}>
-              <Image
-                src="/images/projects/sample/bnik2_01.jpg"
-                alt="Городская усадьба, пример проектных работ"
-                layout="fill"
-                objectFit="cover"
-              />
+              <Link href="/projects/sample">
+                <Image
+                  src="/images/projects/sample/bnik2_01.jpg"
+                  alt="Городская усадьба, пример проектных работ"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </Link>
             </div>
             <div className={styles.featured__text}>
-              <Button
-                buttonStyles={['button_style_regular', 'button_size_regular']}
-              >
-                Проектные работы
-              </Button>
+              <Link href="/projects/sample">
+                <Button
+                  buttonStyles={['button_style_regular', 'button_size_regular']}
+                >
+                  Проектные работы
+                </Button>
+              </Link>
               <p className={styles.featured__description}>
                 Полный цикл научно-исследовательских, научно-изыскательских и
                 проектных работ, направленных на сохранение объектов культурного

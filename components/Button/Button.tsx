@@ -1,16 +1,14 @@
-import React, { PropsWithChildren, forwardRef } from 'react';
+import React, { PropsWithChildren, FC, MouseEventHandler } from 'react';
 import getStyles from '../../utils/getStyles';
 import styles from './Button.module.scss';
 
 type Props = PropsWithChildren<{
   buttonStyles: Array<string> | string;
+  onClick?: MouseEventHandler<HTMLButtonElement>
 }>;
 
-type Ref = HTMLButtonElement;
-
-const Button = forwardRef<Ref, Props>(({ buttonStyles, onClick, children }: Props, ref) => (
+const Button: FC<Props> = ({ buttonStyles, onClick, children }: Props) => (
   <button
-    ref={ref}
     onClick={onClick}
     type="button"
     className={`${styles.button} ${getStyles({
@@ -20,6 +18,6 @@ const Button = forwardRef<Ref, Props>(({ buttonStyles, onClick, children }: Prop
   >
     {children}
   </button>
-));
+);
 
 export default Button;

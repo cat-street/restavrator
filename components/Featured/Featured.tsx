@@ -18,6 +18,7 @@ function Featured(): JSX.Element {
                 <Image
                   src="/images/projects/sample/bnik2_01.jpg"
                   alt="Городская усадьба, пример проектных работ"
+                  className={styles.featured__image}
                   layout="fill"
                   objectFit="cover"
                 />
@@ -40,19 +41,24 @@ function Featured(): JSX.Element {
           </li>
           <li className={styles.featured__item}>
             <div className={styles['featured__image-container']}>
-              <Image
-                src="/images/projects/iki/kusk_03.jpg"
-                alt="Павильон усадьбы Кусково, пример исследований"
-                layout="fill"
-                objectFit="cover"
-              />
+              <Link href="/projects/research">
+                <Image
+                  src="/images/projects/iki/kusk_03.jpg"
+                  alt="Павильон усадьбы Кусково, пример исследований"
+                  className={styles.featured__image}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </Link>
             </div>
             <div className={styles.featured__text}>
-              <Button
-                buttonStyles={['button_style_regular', 'button_size_regular']}
-              >
-                Исследования
-              </Button>
+              <Link href="/projects/research">
+                <Button
+                  buttonStyles={['button_style_regular', 'button_size_regular']}
+                >
+                  Исследования
+                </Button>
+              </Link>
               <p className={styles.featured__description}>
                 Архивные, библиографические, натурные и иные исследования,
                 проводимые по историко-градостроительному и
@@ -62,19 +68,24 @@ function Featured(): JSX.Element {
           </li>
           <li className={styles.featured__item}>
             <div className={styles['featured__image-container']}>
-              <Image
-                src="/images/books/mos4_01.jpg"
-                alt="Обложка альманаха Москва, которая есть"
-                layout="fill"
-                objectFit="cover"
-              />
+              <Link href="/projects/books">
+                <Image
+                  src="/images/books/mos4_01.jpg"
+                  alt="Обложка альманаха Москва, которая есть"
+                  className={styles.featured__image}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </Link>
             </div>
             <div className={styles.featured__text}>
-              <Button
-                buttonStyles={['button_style_regular', 'button_size_regular']}
-              >
-                Публикации
-              </Button>
+              <Link href="/projects/books">
+                <Button
+                  buttonStyles={['button_style_regular', 'button_size_regular']}
+                >
+                  Публикации
+                </Button>
+              </Link>
               <p className={styles.featured__description}>
                 Проекты &quot;НПП Реставрационный центр&quot;, вошедшие в
                 альманах Департамента культурного наследия г. Москвы

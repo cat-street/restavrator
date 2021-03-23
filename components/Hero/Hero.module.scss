@@ -2,8 +2,7 @@
 
 .hero {
   width: 100%;
-  height: 75vh;
-  padding: 0 $side-padding;
+  padding: ($vertical-padding * 2.5) $side-padding;
   display: flex;
   justify-content: center;
   align-items: center;

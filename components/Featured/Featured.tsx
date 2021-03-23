@@ -15,13 +15,15 @@ function Featured(): JSX.Element {
           <li className={styles.featured__item}>
             <div className={styles['featured__image-container']}>
               <Link href="/projects/sample">
-                <Image
-                  src="/images/projects/sample/bnik2_01.jpg"
-                  alt="Городская усадьба, пример проектных работ"
-                  className={styles.featured__image}
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <a href="/projects/sample">
+                  <Image
+                    src="/images/projects/sample/bnik2_01.jpg"
+                    alt="Городская усадьба, пример проектных работ"
+                    className={styles.featured__image}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </a>
               </Link>
             </div>
             <div className={styles.featured__text}>
@@ -42,13 +44,15 @@ function Featured(): JSX.Element {
           <li className={styles.featured__item}>
             <div className={styles['featured__image-container']}>
               <Link href="/projects/research">
-                <Image
-                  src="/images/projects/iki/kusk_03.jpg"
-                  alt="Павильон усадьбы Кусково, пример исследований"
-                  className={styles.featured__image}
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <a href="/projects/research">
+                  <Image
+                    src="/images/projects/iki/kusk_03.jpg"
+                    alt="Павильон усадьбы Кусково, пример исследований"
+                    className={styles.featured__image}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </a>
               </Link>
             </div>
             <div className={styles.featured__text}>
@@ -69,13 +73,15 @@ function Featured(): JSX.Element {
           <li className={styles.featured__item}>
             <div className={styles['featured__image-container']}>
               <Link href="/projects/books">
-                <Image
-                  src="/images/books/mos4_01.jpg"
-                  alt="Обложка альманаха Москва, которая есть"
-                  className={styles.featured__image}
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <a href="/projects/books">
+                  <Image
+                    src="/images/books/mos4_01.jpg"
+                    alt="Обложка альманаха Москва, которая есть"
+                    className={styles.featured__image}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </a>
               </Link>
             </div>
             <div className={styles.featured__text}>

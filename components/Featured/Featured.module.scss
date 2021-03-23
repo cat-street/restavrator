@@ -2,12 +2,12 @@
 
 .featured {
   background-color: $secondary-bg;
+  padding: $vertical-padding $side-padding;
 
   &__list {
     display: flex;
     justify-content: space-between;
     gap: 56px;
-    padding: $vertical-padding $side-padding;
   }
 
   &__item {

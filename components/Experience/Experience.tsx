@@ -1,5 +1,6 @@
 // import Link from 'next/link';
 import React, { FC } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ContentContainer from '../ContentContainer/ContentContainer';
 import styles from './Experience.module.scss';
@@ -12,6 +13,10 @@ const Experience: FC = () => (
       <h3 className={styles.experience__subtitle}>
         по сохранению объектов культурного наследия
       </h3>
+      <FontAwesomeIcon
+        icon={['fas', 'landmark']}
+        className={styles.experience__landmark}
+      />
       <ul className={styles.experience__cards}>
         <ExperienceCard
           title="Качество"
@@ -22,7 +27,17 @@ const Experience: FC = () => (
         <ExperienceCard
           title="Опыт"
           description="Наши специалисты обладают огромным опытом работы в реставрации"
-          icon={['far', 'thumbs-up']}
+          icon={['fas', 'graduation-cap']}
+        />
+        <ExperienceCard
+          title="Доступность"
+          description="Мы не включаем в стоимость наших работ неоправданные расходы"
+          icon={['fas', 'ruble-sign']}
+        />
+        <ExperienceCard
+          title="Гарантия"
+          description="Мы оказываем поддержку клиентам в процессе и после проведения производственных работ"
+          icon={['far', 'handshake']}
         />
       </ul>
     </ContentContainer>

@@ -1,56 +1,40 @@
 @import 'styles/variables.scss';
 
 .experience {
-  background: url('/images/vdnh_bg.jpg') 50% 0 / cover no-repeat;
+  background: url('/images/vdnh_bg.jpg') 50% 50% / cover no-repeat;
   padding: $vertical-padding $side-padding;
 
   text-align: center;
 
   &__title {
-    margin: 0;
+    margin: 0 0 6px;
 
     color: $main-accent;
-    font-size: 26px;
+    font-size: ($font-size * 1.625);
     font-weight: 700;
     font-style: italic;
     text-transform: uppercase;
   }
 
   &__subtitle {
-    margin: 10px 0 0;
+    margin: 0 0 18px;
 
     color: $main-text;
-    font-size: 30px;
+    font-size: ($font-size * 2);
     font-weight: 700;
     text-transform: uppercase;
   }
 
   &__cards {
     display: flex;
+    gap: 24px;
   }
 
-  &__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  &__landmark {
+    display: block;
+    width: 24px;
+    margin: 0 auto $side-padding;
 
-  &__icon-container {
-    width: 100px;
-    height: 100px;
-    padding-bottom: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid #fff;
-    border-radius: 50%;
-  }
-
-  &__icon {
-    width: 55%;
-    height: auto;
-    color: $main-accent;
+    color: $main-text;
   }
 }

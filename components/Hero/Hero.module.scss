@@ -21,14 +21,14 @@
 
     background-color: $main-accent;
     font-weight: 700;
-    font-size: 40px;
+    font-size: ($font-size * 2.5);
     text-transform: uppercase;
   }
 
   &__subtitle {
     margin: 6px 0 0;
 
-    font-size: 60px;
+    font-size: ($font-size * 3.75);
     font-weight: 400;
     text-transform: uppercase;
   }
@@ -36,6 +36,6 @@
   &__age {
     margin: 32px 0;
 
-    font-size: 20px;
+    font-size: ($font-size * 1.25);
   }
 }

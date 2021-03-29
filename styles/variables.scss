@@ -2,11 +2,12 @@ $main-accent: #e2b13c;
 $main-text: #343434;
 $main-bright: #fff;
 $secondary-bg: #f3f6f9;
+$dark-bg: #0D1923;
 
 $side-padding: 48px;
 $vertical-padding: 90px;
 
-$text-font-size: 16px;
+$font-size: 16px;
 $secondary-font: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
 
 @mixin focus-outline($color) {

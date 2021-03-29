@@ -5,24 +5,43 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex: 1 1;
   }
 
   &__icon-container {
-    width: 100px;
-    height: 100px;
-    padding-bottom: 5px;
+    width: 90px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 50%;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      background-color: #fff;
+      transform: translate(0, -10px);
+    }
   }
 
   &__icon {
-    width: 55%;
-    height: auto;
+    max-width: 75%;
+    max-height: 60%;
     color: $main-accent;
+  }
+
+  &__card-title {
+    margin: 18px 0 12px;
+
+    font-size: ($font-size * 1.5);
+    font-weight: 450;
+  }
+
+  &__card-text {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.5;
   }
 }

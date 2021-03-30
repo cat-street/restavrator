@@ -1,21 +1,17 @@
 // import Link from 'next/link';
 import React, { FC } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import ContentContainer from '../ContentContainer/ContentContainer';
+import ContentContainer from '../../ContentContainer/ContentContainer';
 import styles from './Experience.module.scss';
 import ExperienceCard from '../ExperienceCard/ExperienceCard';
+import SectionTitle from '../../SectionTitle/SectionTitle';
 
 const Experience: FC = () => (
   <section className={styles.experience}>
     <ContentContainer>
-      <h2 className={styles.experience__title}>Многолетний опыт</h2>
-      <h3 className={styles.experience__subtitle}>
-        по сохранению объектов культурного наследия
-      </h3>
-      <FontAwesomeIcon
-        icon={['fas', 'landmark']}
-        className={styles.experience__landmark}
+      <SectionTitle
+        title="Многолетний опыт"
+        subtitle="по сохранению объектов культурного наследия"
       />
       <ul className={styles.experience__cards}>
         <ExperienceCard

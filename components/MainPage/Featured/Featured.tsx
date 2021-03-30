@@ -3,9 +3,9 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import ContentContainer from '../ContentContainer/ContentContainer';
+import ContentContainer from '../../ContentContainer/ContentContainer';
 import styles from './Featured.module.scss';
-import Button from '../Button/Button';
+import Button from '../../Button/Button';
 
 const Featured: FC = () => (
   <section className={styles.featured}>

@@ -1,0 +1,11 @@
+@import 'styles/variables.scss';
+
+.experience {
+  background: url('/images/vdnh_bg.jpg') 50% 50% / cover no-repeat;
+  padding: $vertical-padding $side-padding;
+
+  &__cards {
+    display: flex;
+    gap: 24px;
+  }
+}

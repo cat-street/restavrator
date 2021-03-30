@@ -1,9 +1,7 @@
 @import 'styles/variables.scss';
 
-.experience {
-  background: url('/images/vdnh_bg.jpg') 50% 50% / cover no-repeat;
-  padding: $vertical-padding $side-padding;
-
+.header {
+  margin-bottom: $side-padding;
   text-align: center;
 
   &__title {
@@ -25,15 +23,10 @@
     text-transform: uppercase;
   }
 
-  &__cards {
-    display: flex;
-    gap: 24px;
-  }
-
   &__landmark {
     display: block;
     width: 24px;
-    margin: 0 auto $side-padding;
+    margin: 0 auto;
 
     color: $main-text;
   }

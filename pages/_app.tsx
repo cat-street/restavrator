@@ -7,6 +7,9 @@ import {
   faGraduationCap,
   faRubleSign,
   faSearch,
+  faTimes,
+  faCaretLeft,
+  faCaretRight,
 } from '@fortawesome/free-solid-svg-icons';
 import '../styles/variables.scss';
 import '../styles/globals.scss';
@@ -18,6 +21,9 @@ library.add(
   faGraduationCap,
   faRubleSign,
   faSearch,
+  faTimes,
+  faCaretLeft,
+  faCaretRight,
 );
 
 function MyApp({ Component, pageProps }: AppProps): ReactElement {

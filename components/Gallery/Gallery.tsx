@@ -1,40 +1,64 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 
 import GalleryLightbox from './GalleryLightbox/GalleryLightbox';
 import styles from './Gallery.module.scss';
+import GalleryItem from './GalleryItem/GalleryItem';
 
 type Props = {
   type: string;
 };
 
-const Gallery: FC<Props> = ({ type }: Props) => (
-  <>
-    <GalleryLightbox />
-    <ul className={styles.gallery}>
-      <li className={styles.gallery__item}>
-        <div className={styles['gallery__image-container']}>
-          <Image
-            src="/images/projects/sample/kazah_01.jpg"
-            alt="Городская усадьба, пример проектных работ"
-            className={styles.gallery__image}
-            objectFit="cover"
-            layout="fill"
+const gallery = [
+  {
+    url: '/images/projects/sample/kazah_01.jpg',
+    text: 'ВДНХ, Павильон "Казахстан"',
+  },
+  {
+    url: '/images/projects/sample/bnik2_01.jpg',
+    text: 'Городская усадьба, 1-я пол. XIX в. - Главный дом',
+  },
+  {
+    url: '/images/projects/sample/bnik1_01.jpg',
+    text: 'Городская усадьба, 1-я пол. XIX в. - Флигель',
+  },
+];
+
+const Gallery: FC<Props> = ({ type }: Props) => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleClick = (index: number) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const handleClose = () => {
+    setLightboxOpen(false);
+    setCurrentImageIndex(0);
+  };
+
+  return (
+    <>
+      {lightboxOpen && (
+        <GalleryLightbox
+          gallery={gallery}
+          imageIndex={currentImageIndex}
+          onClose={handleClose}
+          setImage={setCurrentImageIndex}
+        />
+      )}
+      <ul className={styles.gallery}>
+        {gallery.map((el, i) => (
+          <GalleryItem
+            url={el.url}
+            text={el.text}
+            key={Math.random()}
+            onClick={() => handleClick(i)}
           />
-          <div className={styles.gallery__overlay}>
-            <FontAwesomeIcon
-              icon={['fas', 'search']}
-              className={styles['gallery__overlay-icon']}
-            />
-          </div>
-        </div>
-        <p className={styles.gallery__text}>
-          ВДНХ, Павильон &quot;Казахстан&quot;
-        </p>
-      </li>
-    </ul>
-  </>
-);
+        ))}
+      </ul>
+    </>
+  );
+};
 
 export default Gallery;

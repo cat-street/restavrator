@@ -37,3 +37,78 @@
     color: #fff;
   }
 }
+
+.lightbox {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba($color: #000000, $alpha: 0.75);
+
+  &__image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+  }
+
+  &__image {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+
+  &__text {
+    margin-top: 6px;
+
+    color: #fff;
+    font-size: 16px;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 0;
+
+    &_close {
+      align-self: flex-end;
+      margin-bottom: 6px;
+    }
+
+    &_left, &_right {
+      position: absolute;
+    }
+
+    &_left {
+      left: 24px;
+    }
+
+    &_right {
+      right: 24px;
+    }
+  }
+
+  &__icon {
+    color: #fff;
+    opacity: .5;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &_left, &_right {
+      width: 18px;
+    }
+
+    &_close {
+      width: 15px;
+    }
+  }
+}

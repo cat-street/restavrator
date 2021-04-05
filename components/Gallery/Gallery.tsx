@@ -1,29 +1,16 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, memo } from 'react';
 
-import GalleryLightbox from './GalleryLightbox/GalleryLightbox';
+import GalleryLightbox from './GalleryLightbox';
+import GalleryItem from './GalleryItem';
+
 import styles from './Gallery.module.scss';
-import GalleryItem from './GalleryItem/GalleryItem';
 
 type Props = {
   type: string;
+  gallery: { id: string, url: string, text: string }[];
 };
 
-const gallery = [
-  {
-    url: '/images/projects/sample/kazah_01.jpg',
-    text: 'ВДНХ, Павильон "Казахстан"',
-  },
-  {
-    url: '/images/projects/sample/bnik2_01.jpg',
-    text: 'Городская усадьба, 1-я пол. XIX в. - Главный дом',
-  },
-  {
-    url: '/images/projects/sample/bnik1_01.jpg',
-    text: 'Городская усадьба, 1-я пол. XIX в. - Флигель',
-  },
-];
-
-const Gallery: FC<Props> = ({ type }: Props) => {
+const Gallery: FC<Props> = memo(({ type, gallery }: Props) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -52,13 +39,13 @@ const Gallery: FC<Props> = ({ type }: Props) => {
           <GalleryItem
             url={el.url}
             text={el.text}
-            key={Math.random()}
+            key={el.id}
             onClick={() => handleClick(i)}
           />
         ))}
       </ul>
     </>
   );
-};
+});
 
 export default Gallery;

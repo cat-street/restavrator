@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import styles from './GalleryItem.module.scss';
+import styles from './Gallery.module.scss';
 
 type Props = {
   url: string;

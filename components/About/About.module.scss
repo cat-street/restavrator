@@ -1,0 +1,17 @@
+@import 'styles/variables.scss';
+
+.about {
+  padding: $vertical-padding $side-padding;
+  background-color: $dark-bg;
+  color: $main-bright;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 56px;
+  }
+
+  &__column {
+    min-width: 300px;
+  }
+}

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-import styles from './ExperienceCard.module.scss';
+import styles from './Experience.module.scss';
 
 type Props = {
   title: string;

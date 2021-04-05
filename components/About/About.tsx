@@ -9,16 +9,16 @@ const About: FC = () => (
     <ContentContainer>
       <div className={styles.about__container}>
         <div className={styles.about__column}>
-          <h2>О компании</h2>
-          <p>
+          <h2 className={styles.about__heading}>О компании</h2>
+          <p className={styles.about__text}>
             Мы разрабатываем проекты реставрации, реконструкции, приспособления
             под современное использование и проводим исследования для объектов
             культурного наследия регионального и федерального значения.
           </p>
         </div>
         <div className={styles.about__column}>
-          <h2>Как нас найти</h2>
-          <ul>
+          <h2 className={styles.about__heading}>Как нас найти</h2>
+          <ul className={styles.about__links}>
             <li>
               Адрес:
               {' '}
@@ -48,7 +48,13 @@ const About: FC = () => (
             <li>
               Email:
               {' '}
-              <a href="resproekt@yandex.ru">resproekt@yandex.ru</a>
+              <a
+                href="mailto:resproekt@yandex.ru"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                resproekt@yandex.ru
+              </a>
             </li>
           </ul>
         </div>

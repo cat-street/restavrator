@@ -28,9 +28,9 @@ const Header: FC = () => {
       <ContentContainer>
         <div className={styles.header__content}>
           <Link href="/">
-            <a href="/" className={styles.header__logo} tabIndex={-1}>
+            <button type="button" className={styles.header__logo} tabIndex={-1}>
               НПП Реставрационный центр
-            </a>
+            </button>
           </Link>
           <MainMenu />
         </div>

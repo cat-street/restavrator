@@ -14,4 +14,17 @@
   &__column {
     min-width: 300px;
   }
+
+  &__heading {
+    font-weight: 450;
+    margin: 0 0 $font-size;
+  }
+
+  &__text {
+    line-height: 1.65;
+  }
+
+  &__links {
+    line-height: 2;
+  }
 }

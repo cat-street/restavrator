@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import ContentContainer from '../ContentContainer/ContentContainer';
+import YaMaps from '../YaMaps/YaMaps';
 
 import styles from './About.module.scss';
 
@@ -17,17 +18,42 @@ const About: FC = () => (
         </div>
         <div className={styles.about__column}>
           <h2>Как нас найти</h2>
-          <p>
-            ddd
-          </p>
+          <ul>
+            <li>
+              Адрес:
+              {' '}
+              <a
+                href="https://yandex.ru/maps/-/CCQ6rXsA-C"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Москва, ул. Авиамоторная, д.8А, стр.5
+              </a>
+            </li>
+            <li>
+              Телефон:
+              {' '}
+              <a href="tel:+74957644232">+7 (495) 764-42-32</a>
+            </li>
+            <li>
+              Телефон:
+              {' '}
+              <a href="tel:+79161238862">+7-916-123-88-62</a>
+            </li>
+            <li>
+              Телефон:
+              {' '}
+              <a href="tel:+79857644232">+7-985-764-42-32</a>
+            </li>
+            <li>
+              Email:
+              {' '}
+              <a href="resproekt@yandex.ru">resproekt@yandex.ru</a>
+            </li>
+          </ul>
         </div>
         <div className={`${styles.about__column} ${styles.about__map}`}>
-          <script
-            type="text/javascript"
-            charSet="utf-8"
-            async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AhzHt4u-0nsSHnXVJCBAhUNTSlATc4nFl&amp;width=100%&amp;height=240&amp;lang=ru_RU&amp;scroll=true"
-          />
+          <YaMaps width="100%" height="240px" />
         </div>
       </div>
     </ContentContainer>

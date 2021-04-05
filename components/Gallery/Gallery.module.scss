@@ -89,8 +89,14 @@
     }
 
     &_close {
-      align-self: flex-end;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+      height: 100px;
+
       background-color: transparent;
+      z-index: 3;
     }
 
     &_left, &_right {
@@ -116,7 +122,7 @@
 
   &__icon {
     color: #fff;
-    opacity: .5;
+    opacity: .65;
     transition: all 200ms ease-out;
 
     &_left, &_right {

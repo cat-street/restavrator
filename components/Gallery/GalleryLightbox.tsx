@@ -78,17 +78,17 @@ const GalleryLightbox: FC<Props> = ({
           className={`${styles.lightbox__icon} ${styles.lightbox__icon_right}`}
         />
       </button>
+      <button
+        type="button"
+        onClick={onClose}
+        className={`${styles.lightbox__button} ${styles.lightbox__button_close}`}
+      >
+        <FontAwesomeIcon
+          icon={['fas', 'times']}
+          className={`${styles.lightbox__icon} ${styles.lightbox__icon_close}`}
+        />
+      </button>
       <figure className={styles['lightbox__image-container']}>
-        <button
-          type="button"
-          onClick={onClose}
-          className={`${styles.lightbox__button} ${styles.lightbox__button_close}`}
-        >
-          <FontAwesomeIcon
-            icon={['fas', 'times']}
-            className={`${styles.lightbox__icon} ${styles.lightbox__icon_close}`}
-          />
-        </button>
         <img
           src={gallery[imageIndex].url}
           alt={gallery[imageIndex].text}

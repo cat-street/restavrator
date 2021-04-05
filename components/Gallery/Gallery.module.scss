@@ -22,10 +22,11 @@
     justify-content: center;
     align-items: center;
 
-    cursor: pointer;
     background-color: rgba($color: #000000, $alpha: 0.5);
+    border: 0;
     opacity: 0;
     transition: all 300ms ease-out;
+    cursor: pointer;
 
     &:hover {
       opacity: 1;
@@ -44,12 +45,20 @@
   left: 0;
   right: 0;
   position: fixed;
-  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  z-index: 2;
   background-color: rgba($color: #000000, $alpha: 0.75);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms, visibility 0ms;
+
+  &_visible {
+    opacity: 1;
+    visibility: visible;
+  }
 
   &__image-container {
     position: relative;
@@ -72,24 +81,36 @@
   }
 
   &__button {
-    background-color: transparent;
     border: 0;
+    cursor: pointer;
+
+    &:hover .lightbox__icon {
+      opacity: 1;
+    }
 
     &_close {
       align-self: flex-end;
-      margin-bottom: 6px;
+      background-color: transparent;
     }
 
     &_left, &_right {
+      width: 100px;
+      height: 100vh;
       position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: rgba($color: #000000, $alpha: 0.2);
+      z-index: 2;
     }
 
     &_left {
-      left: 24px;
+      left: 0;
     }
 
     &_right {
-      right: 24px;
+      right: 0;
     }
   }
 
@@ -97,18 +118,14 @@
     color: #fff;
     opacity: .5;
     transition: all 200ms ease-out;
-    cursor: pointer;
-
-    &:hover {
-      opacity: 1;
-    }
 
     &_left, &_right {
-      width: 18px;
+      width: 24px;
     }
 
     &_close {
-      width: 15px;
+      width: 24px;
+      margin: 6px 0;
     }
   }
 }

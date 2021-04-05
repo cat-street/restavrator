@@ -1,4 +1,6 @@
-import React, { FC, SyntheticEvent, useEffect } from 'react';
+import React, {
+  FC, SyntheticEvent, useEffect, useRef,
+} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './Gallery.module.scss';
@@ -16,6 +18,8 @@ const GalleryLightbox: FC<Props> = ({
   onClose,
   setImage,
 }: Props) => {
+  const box = useRef<HTMLDivElement>(null);
+
   const handleClose = (evt: SyntheticEvent) => {
     if (evt.target === evt.currentTarget) {
       onClose();
@@ -38,6 +42,9 @@ const GalleryLightbox: FC<Props> = ({
 
   useEffect(() => {
     document.addEventListener('keydown', handleEscClose);
+    if (box.current) {
+      box.current.classList.add(styles.lightbox_visible);
+    }
     return () => {
       document.removeEventListener('keydown', handleEscClose);
     };
@@ -49,6 +56,7 @@ const GalleryLightbox: FC<Props> = ({
       onClick={handleClose}
       onKeyDown={handleClose}
       role="presentation"
+      ref={box}
     >
       <button
         type="button"

@@ -7,7 +7,7 @@ import styles from './Gallery.module.scss';
 
 type Props = {
   type: string;
-  gallery: { id: string, url: string, text: string }[];
+  gallery: { id: string; url: string; text: string }[];
 };
 
 const Gallery: FC<Props> = memo(({ type, gallery }: Props) => {

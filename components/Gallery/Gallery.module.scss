@@ -39,6 +39,14 @@
   }
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
 .lightbox {
   top: 0;
   bottom: 0;
@@ -51,14 +59,7 @@
 
   z-index: 2;
   background-color: rgba($color: #000000, $alpha: 0.75);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 300ms ease-out, visibility 0ms;
-
-  &_visible {
-    opacity: 1;
-    visibility: visible;
-  }
+  transition: opacity 200ms ease-out;
 
   &__image-container {
     position: relative;
@@ -84,7 +85,15 @@
     border: 0;
     cursor: pointer;
 
-    &:hover .lightbox__icon {
+    &:disabled {
+      cursor: auto;
+
+      .lightbox__icon {
+        color: rgba($color: #fff, $alpha: 0.3);
+      }
+    }
+
+    &:hover:not(:disabled) .lightbox__icon {
       opacity: 1;
     }
 
@@ -96,6 +105,7 @@
       height: 100px;
 
       background-color: transparent;
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
       z-index: 3;
     }
 

@@ -21,19 +21,18 @@ const Gallery: FC<Props> = memo(({ type, gallery }: Props) => {
 
   const handleClose = () => {
     setLightboxOpen(false);
-    setCurrentImageIndex(0);
+    // setCurrentImageIndex(0);
   };
 
   return (
     <>
-      {lightboxOpen && (
-        <GalleryLightbox
-          gallery={gallery}
-          imageIndex={currentImageIndex}
-          onClose={handleClose}
-          setImage={setCurrentImageIndex}
-        />
-      )}
+      <GalleryLightbox
+        showModal={lightboxOpen}
+        gallery={gallery}
+        imageIndex={currentImageIndex}
+        onClose={handleClose}
+        setImage={setCurrentImageIndex}
+      />
       <ul className={styles.gallery}>
         {gallery.map((el, i) => (
           <GalleryItem

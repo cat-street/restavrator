@@ -1,0 +1,23 @@
+@import 'styles/variables.scss';
+
+.info {
+  padding: $vertical-padding * 1.5 $side-padding $vertical-padding;
+
+  &__header {
+    margin: 0;
+    padding-bottom: $font-size * 1.5;
+
+    font-size: $header-size;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+  }
+
+  &__list {
+    margin-top: $font-size * 1.5;
+    padding-left: $font-size;
+
+    font-size: $font-size * 1.1;
+    line-height: 2;
+    list-style: square;
+  }
+}

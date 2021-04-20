@@ -8,7 +8,7 @@ import Footer from '../components/Footer/Footer';
 
 function About(): ReactElement {
   return (
-    <Layout title="НПП Реставрационный центр - о компании">
+    <Layout title="О компании - НПП Реставрационный центр">
       <Header />
       <AboutPage />
       <AboutSection />

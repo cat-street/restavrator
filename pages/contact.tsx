@@ -8,7 +8,7 @@ import ContactPage from '../components/ContactPage/ContactPage';
 
 function Contact(): ReactElement {
   return (
-    <Layout title="НПП Реставрационный центр - контакты">
+    <Layout title="Контакты - НПП Реставрационный центр">
       <Header />
       <ContactPage />
       <AboutSection />

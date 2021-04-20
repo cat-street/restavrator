@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import ContentContainer from '../ContentContainer/ContentContainer';
 import YaMaps from '../YaMaps/YaMaps';
 
-import styles from './About.module.scss';
+import styles from './AboutSection.module.scss';
 
-const About: FC = () => (
+const AboutSection: FC = () => (
   <section className={styles.about}>
     <ContentContainer>
       <div className={styles.about__container}>
@@ -66,4 +66,4 @@ const About: FC = () => (
   </section>
 );
 
-export default About;
+export default AboutSection;

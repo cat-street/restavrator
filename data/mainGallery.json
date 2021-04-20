@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "001",
+      "url": "/images/projects/sample/kazah_01.jpg",
+      "text": "ВДНХ, Павильон \"Казахстан\""
+    },
+    {
+      "id": "002",
+      "url": "/images/projects/sample/bnik2_01.jpg",
+      "text": "Городская усадьба, 1-я пол. XIX в. - Главный дом"
+    },
+    {
+      "id": "003",
+      "url": "/images/projects/sample/bnik1_01.jpg",
+      "text": "Городская усадьба, 1-я пол. XIX в. - Флигель"
+    },
+    {
+      "id": "004",
+      "url": "/images/projects/sample/shab_03.jpg",
+      "text": "Храм Живоначальной Троицы на Шаболовке"
+    },
+    {
+      "id": "005",
+      "url": "/images/projects/sample/gran_01.jpg",
+      "text": "Дом Леонтьевых, начало XIX в."
+    },
+    {
+      "id": "006",
+      "url": "/images/projects/sample/nkisl_01.jpg",
+      "text": "Городская усадьба, XIX в. – Флигель, XIX в."
+    },
+    {
+      "id": "007",
+      "url": "/images/projects/sample/kad2_01.jpg",
+      "text": "Палаты в Кадашевской слободе, XVII в."
+    },
+    {
+      "id": "008",
+      "url": "/images/projects/sample/kad3_01.jpg",
+      "text": "Дом жилой, XVII - XIX вв."
+    }
+  ]
+}

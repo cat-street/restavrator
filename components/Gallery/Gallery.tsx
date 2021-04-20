@@ -10,7 +10,7 @@ type Props = {
   gallery: { id: string; url: string; text: string }[];
 };
 
-const Gallery: FC<Props> = memo(({ type, gallery }: Props) => {
+const Gallery: FC<Props> = ({ type, gallery }: Props) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -21,7 +21,6 @@ const Gallery: FC<Props> = memo(({ type, gallery }: Props) => {
 
   const handleClose = () => {
     setLightboxOpen(false);
-    // setCurrentImageIndex(0);
   };
 
   return (
@@ -45,6 +44,6 @@ const Gallery: FC<Props> = memo(({ type, gallery }: Props) => {
       </ul>
     </>
   );
-});
+};
 
-export default Gallery;
+export default memo(Gallery);

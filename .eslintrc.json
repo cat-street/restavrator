@@ -27,6 +27,7 @@
         "custom": "ignore"
       }
     ],
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-one-expression-per-line": "off"
   }
 }

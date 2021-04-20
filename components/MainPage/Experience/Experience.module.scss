@@ -6,7 +6,7 @@
 
   &__cards {
     display: flex;
-    gap: 24px;
+    gap: $gap / 2;
   }
 
   &__card {

@@ -1,13 +1,25 @@
 @import 'styles/variables.scss';
 
 .about {
-  display: grid;
-  grid-template-columns: 450px 1fr;
-  align-items: start;
-  // padding-top: 90px;
-  padding: $vertical-padding $side-padding;
+  padding: $vertical-padding * 1.5 $side-padding $vertical-padding;
 
-  &__image {
-    position: relative;
+  &__container {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    align-items: start;
+    gap: $gap;
   }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: $gap / 4;
+  }
+
+  &__text p {
+    margin: 0;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
 }

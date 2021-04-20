@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Gallery from '../../Gallery/Gallery';
 import SectionTitle from '../../SectionTitle/SectionTitle';
 

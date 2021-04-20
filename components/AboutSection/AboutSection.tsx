@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import ContentContainer from '../ContentContainer/ContentContainer';
 import YaMaps from '../YaMaps/YaMaps';
 

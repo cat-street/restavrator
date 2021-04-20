@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import type { AppProps } from 'next/app';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faThumbsUp, faHandshake } from '@fortawesome/free-regular-svg-icons';

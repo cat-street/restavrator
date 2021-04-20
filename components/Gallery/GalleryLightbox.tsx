@@ -1,4 +1,4 @@
-import React, {
+import {
   FC, SyntheticEvent, useEffect, useRef,
 } from 'react';
 import CSSTransition from 'react-transition-group/CSSTransition';

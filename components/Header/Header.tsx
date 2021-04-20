@@ -1,5 +1,5 @@
+import { FC, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import React, { FC, useRef, useEffect } from 'react';
 
 import ContentContainer from '../ContentContainer/ContentContainer';
 import MainMenu from '../MainMenu/MainMenu';

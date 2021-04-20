@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import Hero from '../components/MainPage/Hero/Hero';
 import Layout from '../components/Layout/Layout';
 import Header from '../components/Header/Header';

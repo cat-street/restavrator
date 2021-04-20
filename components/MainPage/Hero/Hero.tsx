@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Button from '../../Button/Button';
 import styles from './Hero.module.scss';
 

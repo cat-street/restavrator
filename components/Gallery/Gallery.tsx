@@ -1,4 +1,4 @@
-import React, { FC, useState, memo } from 'react';
+import { FC, useState, memo } from 'react';
 
 import GalleryLightbox from './GalleryLightbox';
 import GalleryItem from './GalleryItem';

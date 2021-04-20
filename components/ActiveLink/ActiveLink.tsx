@@ -1,4 +1,6 @@
-import React, { Children, FC, ReactElement } from 'react';
+import {
+  Children, FC, ReactElement, cloneElement,
+} from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -31,7 +33,7 @@ const ActiveLink: FC<Props> = ({
 
   return (
     <Link href={href} {...props}>
-      {React.cloneElement(child, {
+      {cloneElement(child, {
         className: className || null,
       })}
     </Link>

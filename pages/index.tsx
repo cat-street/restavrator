@@ -11,7 +11,7 @@ import Footer from '../components/Footer/Footer';
 function Home(): ReactElement {
   return (
     <Layout title="НПП Реставрационный центр">
-      <Header />
+      <Header transparent />
       <Hero />
       <Featured />
       <Experience />

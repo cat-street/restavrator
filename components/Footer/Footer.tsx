@@ -11,7 +11,7 @@ const Footer: FC = () => {
   return (
     <section className={styles.footer}>
       <p className={styles.footer__copyright}>
-        &copy; 1993-
+        &copy; 1991-
         {getYear}
         {' '}
         ООО &quot;НПП Реставрационный центр&quot;

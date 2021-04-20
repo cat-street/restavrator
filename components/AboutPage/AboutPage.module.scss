@@ -1,0 +1,13 @@
+@import 'styles/variables.scss';
+
+.about {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  align-items: start;
+  // padding-top: 90px;
+  padding: $vertical-padding $side-padding;
+
+  &__image {
+    position: relative;
+  }
+}

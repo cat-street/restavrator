@@ -5,16 +5,20 @@
   position: fixed;
   padding: 0 $side-padding;
 
-  background-color: transparent;
+  background-color: $dark-bg;
   box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.2);
   transition: all 300ms ease-out;
   z-index: 1;
 
-  &_dark {
+  &_transparent {
+    background-color: transparent;
+  }
+
+  &_thin {
     background-color: $dark-bg;
   }
 
-  &_dark &__content {
+  &_thin &__content {
     max-height: 80px;
   }
 

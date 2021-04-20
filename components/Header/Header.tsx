@@ -5,15 +5,19 @@ import ContentContainer from '../ContentContainer/ContentContainer';
 import MainMenu from '../MainMenu/MainMenu';
 import styles from './Header.module.scss';
 
-const Header: FC = () => {
+type Props = {
+  transparent?: boolean;
+};
+
+const Header: FC<Props> = ({ transparent }: Props) => {
   const header = useRef<HTMLHeadingElement>(null);
 
   const fillHeader = () => {
     if (header.current) {
       if (window.scrollY > 56) {
-        header.current.classList.add(styles.header_dark);
+        header.current.classList.add(styles.header_thin);
       } else if (window.scrollY < 56) {
-        header.current.classList.remove(styles.header_dark);
+        header.current.classList.remove(styles.header_thin);
       }
     }
   };
@@ -24,7 +28,10 @@ const Header: FC = () => {
   }, [fillHeader]);
 
   return (
-    <header className={styles.header} ref={header}>
+    <header
+      className={`${styles.header} ${transparent && styles.header_transparent}`}
+      ref={header}
+    >
       <ContentContainer>
         <div className={styles.header__content}>
           <Link href="/">
@@ -37,6 +44,10 @@ const Header: FC = () => {
       </ContentContainer>
     </header>
   );
+};
+
+Header.defaultProps = {
+  transparent: false,
 };
 
 export default Header;

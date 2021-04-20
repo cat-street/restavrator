@@ -1,0 +1,35 @@
+@import 'styles/variables.scss';
+
+.contact {
+  padding: $vertical-padding * 1.5 $side-padding $vertical-padding;
+
+  &__columns {
+    padding-bottom: $vertical-padding / 2;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $gap / 2;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: $gap / 2;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__item-title {
+    margin: 0 0 8px;
+  }
+
+  &__item-text {
+    margin: 0;
+    line-height: 1.5;
+  }
+}

@@ -1,7 +1,13 @@
 import { ReactElement } from 'react';
 import type { AppProps } from 'next/app';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faThumbsUp, faHandshake } from '@fortawesome/free-regular-svg-icons';
+import {
+  faThumbsUp,
+  faHandshake,
+  faBuilding,
+  faEnvelope,
+} from '@fortawesome/free-regular-svg-icons';
 import {
   faLandmark,
   faGraduationCap,
@@ -10,7 +16,9 @@ import {
   faTimes,
   faCaretLeft,
   faCaretRight,
+  faMobileAlt,
 } from '@fortawesome/free-solid-svg-icons';
+
 import '../styles/variables.scss';
 import '../styles/globals.scss';
 
@@ -24,6 +32,9 @@ library.add(
   faTimes,
   faCaretLeft,
   faCaretRight,
+  faBuilding,
+  faEnvelope,
+  faMobileAlt,
 );
 
 function MyApp({ Component, pageProps }: AppProps): ReactElement {

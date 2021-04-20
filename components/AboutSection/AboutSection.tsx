@@ -59,7 +59,7 @@ const AboutSection: FC = () => (
           </ul>
         </div>
         <div className={`${styles.about__column} ${styles.about__map}`}>
-          {/* <YaMaps width="100%" height="240px" /> */}
+          <YaMaps width="100%" height="240px" />
         </div>
       </div>
     </ContentContainer>

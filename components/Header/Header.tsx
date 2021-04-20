@@ -29,7 +29,7 @@ const Header: FC<Props> = ({ transparent }: Props) => {
 
   return (
     <header
-      className={`${styles.header} ${transparent && styles.header_transparent}`}
+      className={`${styles.header} ${transparent ? styles.header_transparent : null}`}
       ref={header}
     >
       <ContentContainer>

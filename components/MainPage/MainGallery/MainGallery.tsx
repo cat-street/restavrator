@@ -8,7 +8,7 @@ import styles from './MainGallery.module.scss';
 const MainGallery: FC = () => (
   <section className={styles['main-gallery']}>
     <SectionTitle title="Галерея" subtitle="Наши объекты" />
-    <Gallery type="main" gallery={mainGallery.items} />
+    <Gallery gallery={mainGallery.items} />
   </section>
 );
 

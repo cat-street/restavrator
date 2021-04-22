@@ -1,11 +1,19 @@
 import { FC, PropsWithChildren } from 'react';
 import Head from 'next/head';
+import Header from '../Header/Header';
+import AboutSection from '../AboutSection/AboutSection';
+import Footer from '../Footer/Footer';
 
 type Props = PropsWithChildren<{
   title?: string;
+  transparentHeader?: boolean;
 }>;
 
-const Layout: FC<Props> = ({ title, children }: Props) => (
+const Layout: FC<Props> = ({
+  title,
+  transparentHeader = false,
+  children,
+}: Props) => (
   <>
     <Head>
       <title>{title}</title>
@@ -30,7 +38,10 @@ const Layout: FC<Props> = ({ title, children }: Props) => (
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="theme-color" content="#ffffff" />
     </Head>
+    <Header transparent={transparentHeader} />
     {children}
+    <AboutSection />
+    <Footer />
   </>
 );
 

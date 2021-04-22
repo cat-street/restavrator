@@ -6,7 +6,7 @@ import MainMenu from '../MainMenu/MainMenu';
 import styles from './Header.module.scss';
 
 type Props = {
-  transparent?: boolean;
+  transparent: boolean;
 };
 
 const Header: FC<Props> = ({ transparent }: Props) => {
@@ -44,10 +44,6 @@ const Header: FC<Props> = ({ transparent }: Props) => {
       </ContentContainer>
     </header>
   );
-};
-
-Header.defaultProps = {
-  transparent: false,
 };
 
 export default Header;

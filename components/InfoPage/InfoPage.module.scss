@@ -20,4 +20,32 @@
     line-height: 2;
     list-style: square;
   }
+
+  &__columns {
+    display: flex;
+    gap: $gap;
+
+    div {
+      flex: 1 1;
+    }
+  }
+
+  p {
+    margin: $font-size 0;
+
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: $font-size * 2;
+  }
+
+  &__quote {
+    margin: $font-size 0 0;
+    padding-right: $font-size;
+
+    text-align: right;
+    font-size: $font-size * .9;
+    color: $dim-text;
+    line-height: 1.5;
+    border-right: 5px solid #eee;
+  }
 }

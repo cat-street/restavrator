@@ -14,7 +14,7 @@
 
   &__subheader {
     margin: 0;
-    padding: $font-size * 1.5 0 $font-size * 2;
+    padding: $gap 0 $font-size * 2;
 
     font-size: $header-size * 0.7;
     font-weight: 500;
@@ -25,17 +25,17 @@
     padding-left: $font-size;
 
     font-size: $font-size * 1.1;
-    line-height: 2;
     list-style: square;
+
+    li {
+      padding-top: $font-size / 2;
+    }
   }
 
   &__columns {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: $gap;
-
-    div {
-      flex: 1 1;
-    }
   }
 
   ul {
@@ -68,9 +68,5 @@
     color: $dim-text;
     line-height: 1.5;
     border-right: 5px solid #eee;
-  }
-
-  &__quote:not(:last-child) {
-    margin-bottom: $gap;
   }
 }

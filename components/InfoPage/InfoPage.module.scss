@@ -12,6 +12,14 @@
     border-bottom: 1px solid #eee;
   }
 
+  &__subheader {
+    margin: 0;
+    padding: $font-size * 1.5 0 $font-size * 2;
+
+    font-size: $header-size * 0.7;
+    font-weight: 500;
+  }
+
   &__list {
     margin-top: $font-size * 1.5;
     padding-left: $font-size;
@@ -30,22 +38,39 @@
     }
   }
 
+  ul {
+    list-style: outside;
+    padding-left: $font-size * 2;
+  }
+
   p {
     margin: $font-size 0;
-
-    line-height: 1.5;
-    text-align: justify;
     text-indent: $font-size * 2;
   }
 
+  li {
+    margin: $font-size / 4;
+  }
+
+  p,
+  li {
+    line-height: 1.5;
+    text-align: justify;
+  }
+
   &__quote {
-    margin: $font-size 0 0;
+    margin: $font-size 0 0 auto;
     padding-right: $font-size;
+    max-width: 450px;
 
     text-align: right;
-    font-size: $font-size * .9;
+    font-size: $font-size * 0.9;
     color: $dim-text;
     line-height: 1.5;
     border-right: 5px solid #eee;
+  }
+
+  &__quote:not(:last-child) {
+    margin-bottom: $gap;
   }
 }

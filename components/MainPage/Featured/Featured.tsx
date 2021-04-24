@@ -11,19 +11,17 @@ const Featured: FC = () => (
     <ContentContainer>
       <ul className={styles.featured__list}>
         <li className={styles.featured__item}>
-          <Link href="/projects/sample">
-            <div className={styles['featured__image-container']}>
-              <Image
-                src="/images/projects/sample/bnik2_01.jpg"
-                alt="Городская усадьба, пример проектных работ"
-                className={styles.featured__image}
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-          </Link>
+          <div className={styles['featured__image-container']}>
+            <Image
+              src="/images/projects/sample/bnik2_01.jpg"
+              alt="Городская усадьба, пример проектных работ"
+              className={styles.featured__image}
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <div className={styles.featured__text}>
-            <Link href="/projects/sample">
+            <Link href="/projects">
               <Button
                 buttonStyles={['button_style_regular', 'button_size_regular']}
               >
@@ -38,19 +36,17 @@ const Featured: FC = () => (
           </div>
         </li>
         <li className={styles.featured__item}>
-          <Link href="/projects/research">
-            <div className={styles['featured__image-container']}>
-              <Image
-                src="/images/projects/iki/kusk_03.jpg"
-                alt="Павильон усадьбы Кусково, пример исследований"
-                className={styles.featured__image}
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-          </Link>
+          <div className={styles['featured__image-container']}>
+            <Image
+              src="/images/projects/iki/kusk_03.jpg"
+              alt="Павильон усадьбы Кусково, пример исследований"
+              className={styles.featured__image}
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <div className={styles.featured__text}>
-            <Link href="/projects/research">
+            <Link href="/research">
               <Button
                 buttonStyles={['button_style_regular', 'button_size_regular']}
               >
@@ -65,19 +61,17 @@ const Featured: FC = () => (
           </div>
         </li>
         <li className={styles.featured__item}>
-          <Link href="/projects/books">
-            <div className={styles['featured__image-container']}>
-              <Image
-                src="/images/books/mos4_01.jpg"
-                alt="Обложка альманаха Москва, которая есть"
-                className={styles.featured__image}
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-          </Link>
+          <div className={styles['featured__image-container']}>
+            <Image
+              src="/images/books/mos4_01.jpg"
+              alt="Обложка альманаха Москва, которая есть"
+              className={styles.featured__image}
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <div className={styles.featured__text}>
-            <Link href="/projects/books">
+            <Link href="/books">
               <Button
                 buttonStyles={['button_style_regular', 'button_size_regular']}
               >
@@ -85,9 +79,9 @@ const Featured: FC = () => (
               </Button>
             </Link>
             <p className={styles.featured__description}>
-              Проекты &quot;НПП Реставрационный центр&quot;, вошедшие в
-              альманах Департамента культурного наследия г.Москвы
-              &quot;Москва, которая есть&quot;
+              Проекты &quot;НПП Реставрационный центр&quot;, вошедшие в альманах
+              Департамента культурного наследия г.Москвы &quot;Москва, которая
+              есть&quot;
             </p>
           </div>
         </li>

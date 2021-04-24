@@ -1,0 +1,30 @@
+{
+  "items": [
+    { "name": "Главная", "link": "/" },
+    { "name": "О компании", "link": "/about" },
+    {
+      "name": "Работы",
+      "link": null,
+      "sub": [
+        {
+          "name": "Проектные работы",
+          "link": "/projects",
+          "sub": [
+            { "name": "Дипломированные проекты", "link": "/projects/diploma" },
+            { "name": "Примеры проектов", "link": "/projects/samples" }
+          ]
+        },
+        {
+          "name": "Исследования",
+          "link": "/research",
+          "sub": [
+            { "name": "Примеры исследований", "link": "/research/samples" }
+          ]
+        },
+        { "name": "Публикации", "link": "/books" }
+      ]
+    },
+    { "name": "Информация", "link": "/info" },
+    { "name": "Контакты", "link": "/contact" }
+  ]
+}

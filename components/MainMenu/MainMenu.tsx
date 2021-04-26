@@ -8,7 +8,7 @@ const MainMenu: FC = () => (
   <nav className={styles['main-menu']}>
     <ul className={styles['main-menu__list']}>
       {mainMenu.items.map((el) => (
-        <MainMenuItem key={el.name} name={el.name} link={el.link} />
+        <MainMenuItem key={el.name} item={el} />
       ))}
     </ul>
   </nav>

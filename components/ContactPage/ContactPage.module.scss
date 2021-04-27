@@ -5,6 +5,9 @@
 
   &__columns {
     padding-bottom: $vertical-padding / 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: $gap / 2;
   }
 
   &__list {
@@ -22,6 +25,7 @@
   &__icon {
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
   }
 
   &__item-title {

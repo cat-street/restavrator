@@ -24,7 +24,7 @@ const ContactPage: FC = () => (
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  Москва, ул. Авиамоторная, д.8А, стр.5
+                  Москва, ул. Авиамоторная, д. 8А, стр. 5
                 </a>
                 <br />
                 3-й этаж (территория МТУСИ)
@@ -32,10 +32,13 @@ const ContactPage: FC = () => (
             </ContactItem>
             <ContactItem title="Юридический адрес" icon={['far', 'building']}>
               <p className={styles['contact__item-text']}>
-                111024, г. Москва, ул. Авиамоторная, д.8А стр.5 этаж 3 пом. I
-                часть ком. №15
+                111024, г. Москва, ул. Авиамоторная, д. 8А стр. 5
+                <br />
+                этаж 3 пом. I часть ком. №15
               </p>
             </ContactItem>
+          </ul>
+          <ul className={styles.contact__list}>
             <ContactItem title="E-mail" icon={['far', 'envelope']}>
               <p className={styles['contact__item-text']}>
                 <a

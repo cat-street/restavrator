@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import { FC } from 'react';
 import ContentContainer from '../ContentContainer/ContentContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
 import styles from './AboutPage.module.scss';
 
-const AboutPage: FC = () => (
+const AboutPage = (): JSX.Element => (
   <section className={styles.about}>
     <ContentContainer>
       <div className={styles.about__container}>

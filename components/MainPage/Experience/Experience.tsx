@@ -1,11 +1,9 @@
-import { FC } from 'react';
-
 import ContentContainer from '../../ContentContainer/ContentContainer';
 import styles from './Experience.module.scss';
 import ExperienceCard from './ExperienceCard';
 import SectionTitle from '../../SectionTitle/SectionTitle';
 
-const Experience: FC = () => (
+const Experience = (): JSX.Element => (
   <section className={styles.experience}>
     <ContentContainer>
       <SectionTitle

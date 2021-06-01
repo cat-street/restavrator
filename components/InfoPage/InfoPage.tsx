@@ -1,10 +1,9 @@
-import { FC } from 'react';
 import Link from 'next/link';
 
 import ContentContainer from '../ContentContainer/ContentContainer';
 import styles from './InfoPage.module.scss';
 
-const InfoPage: FC = () => (
+const InfoPage = (): JSX.Element => (
   <section className={styles.info}>
     <ContentContainer>
       <h2 className={styles.info__header}>Информация</h2>

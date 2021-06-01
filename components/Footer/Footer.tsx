@@ -1,8 +1,8 @@
-import { FC, useMemo } from 'react';
+import { useMemo } from 'react';
 
 import styles from './Footer.module.scss';
 
-const Footer: FC = () => {
+const Footer = (): JSX.Element => {
   const getYear = useMemo(() => {
     const date = new Date();
     return date.getFullYear();

@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import Link from 'next/link';
 
 import styles from './MainMenu.module.scss';
@@ -8,7 +7,7 @@ type Props = {
   item: MenuItem;
 };
 
-const SubMenuItem: FC<Props> = ({ item }: Props) => (
+const SubMenuItem = ({ item }: Props): JSX.Element => (
   <li className={styles['sub-menu__item']}>
     <Link href={item.link as string}>
       <button

@@ -1,4 +1,3 @@
-import { ReactElement } from 'react';
 import type { AppProps } from 'next/app';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -37,7 +36,7 @@ library.add(
   faMobileAlt,
 );
 
-function MyApp({ Component, pageProps }: AppProps): ReactElement {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return <Component {...pageProps} />;
 }
 

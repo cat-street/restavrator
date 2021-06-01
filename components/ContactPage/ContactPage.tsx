@@ -1,5 +1,3 @@
-import { FC } from 'react';
-
 import ContentContainer from '../ContentContainer/ContentContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import YaMaps from '../YaMaps/YaMaps';
@@ -7,7 +5,7 @@ import YaMaps from '../YaMaps/YaMaps';
 import styles from './ContactPage.module.scss';
 import ContactItem from './ContactItem';
 
-const ContactPage: FC = () => (
+const ContactPage = (): JSX.Element => (
   <section className={styles.contact}>
     <ContentContainer>
       <div className={styles.contact__container}>

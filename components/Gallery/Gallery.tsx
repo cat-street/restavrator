@@ -1,4 +1,4 @@
-import { FC, useState, memo } from 'react';
+import { useState, memo } from 'react';
 
 import GalleryLightbox from './GalleryLightbox';
 import GalleryItem from './GalleryItem';
@@ -10,7 +10,7 @@ type Props = {
   gallery: { id: string; url: string; text: string }[];
 };
 
-const Gallery: FC<Props> = ({ gallery }: Props) => {
+const Gallery = ({ gallery }: Props): JSX.Element => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

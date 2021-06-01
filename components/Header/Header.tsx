@@ -1,4 +1,4 @@
-import { FC, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 
 import ContentContainer from '../ContentContainer/ContentContainer';
@@ -9,7 +9,7 @@ type Props = {
   transparent: boolean;
 };
 
-const Header: FC<Props> = ({ transparent }: Props) => {
+const Header = ({ transparent }: Props): JSX.Element => {
   const header = useRef<HTMLHeadingElement>(null);
 
   const fillHeader = () => {

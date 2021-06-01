@@ -1,6 +1,4 @@
-import {
-  FC, SyntheticEvent, useEffect, useRef,
-} from 'react';
+import { SyntheticEvent, useEffect, useRef } from 'react';
 import CSSTransition from 'react-transition-group/CSSTransition';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -14,13 +12,13 @@ type Props = {
   setImage: (index: number) => void;
 };
 
-const GalleryLightbox: FC<Props> = ({
+const GalleryLightbox = ({
   showModal,
   gallery,
   imageIndex,
   onClose,
   setImage,
-}: Props) => {
+}: Props): JSX.Element => {
   const leftButton = useRef<HTMLButtonElement>(null);
   const rightButton = useRef<HTMLButtonElement>(null);
 

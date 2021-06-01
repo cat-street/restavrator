@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
@@ -10,7 +9,7 @@ type Props = {
   icon: IconProp;
 };
 
-const ExperienceCard: FC<Props> = ({ title, description, icon }: Props) => (
+const ExperienceCard = ({ title, description, icon }: Props): JSX.Element => (
   <li className={styles.experience__card}>
     <div className={styles['experience__icon-container']}>
       <FontAwesomeIcon icon={icon} className={styles.experience__icon} />

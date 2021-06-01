@@ -1,10 +1,9 @@
-import { FC } from 'react';
 import Link from 'next/link';
 
 import Button from '../../Button/Button';
 import styles from './Hero.module.scss';
 
-const Hero: FC = () => (
+const Hero = (): JSX.Element => (
   <div className={styles.hero}>
     <div className={styles.hero__text}>
       <h1 className={styles.hero__title}>

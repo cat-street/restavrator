@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
@@ -9,7 +9,7 @@ type Props = PropsWithChildren<{
   icon: IconProp;
 }>;
 
-const ContactItem: FC<Props> = ({ title, icon, children }: Props) => (
+const ContactItem = ({ title, icon, children }: Props): JSX.Element => (
   <li className={styles['contact__list-item']}>
     <FontAwesomeIcon icon={icon} className={styles.contact__icon} />
     <div>

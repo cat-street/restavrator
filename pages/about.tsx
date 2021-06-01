@@ -1,9 +1,7 @@
-import { ReactElement } from 'react';
-
 import Layout from '../components/Layout/Layout';
 import AboutPage from '../components/AboutPage/AboutPage';
 
-function About(): ReactElement {
+function About(): JSX.Element {
   return (
     <Layout title="О компании - НПП Реставрационный центр">
       <AboutPage />

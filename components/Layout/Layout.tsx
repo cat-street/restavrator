@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 import Head from 'next/head';
 import Header from '../Header/Header';
 import AboutSection from '../AboutSection/AboutSection';
@@ -9,11 +9,11 @@ type Props = PropsWithChildren<{
   transparentHeader?: boolean;
 }>;
 
-const Layout: FC<Props> = ({
+const Layout = ({
   title,
   transparentHeader = false,
   children,
-}: Props) => (
+}: Props): JSX.Element => (
   <>
     <Head>
       <title>{title}</title>

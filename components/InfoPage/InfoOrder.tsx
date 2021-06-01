@@ -1,9 +1,8 @@
-import { FC } from 'react';
 import ContentContainer from '../ContentContainer/ContentContainer';
 
 import styles from './InfoPage.module.scss';
 
-const InfoOrder: FC = () => (
+const InfoOrder = (): JSX.Element => (
   <section className={styles.info}>
     <ContentContainer>
       <h2 className={styles.info__header}>

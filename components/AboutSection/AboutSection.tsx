@@ -1,10 +1,9 @@
-import { FC } from 'react';
 import ContentContainer from '../ContentContainer/ContentContainer';
 import YaMaps from '../YaMaps/YaMaps';
 
 import styles from './AboutSection.module.scss';
 
-const AboutSection: FC = () => (
+const AboutSection = (): JSX.Element => (
   <section className={styles.about}>
     <ContentContainer>
       <div className={styles.about__container}>

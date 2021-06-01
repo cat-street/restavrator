@@ -1,5 +1,3 @@
-import { FC } from 'react';
-
 import styles from './MainMenu.module.scss';
 import { MenuItem } from '../../types';
 import SubMenuItem from './SubMenuItem';
@@ -9,7 +7,7 @@ type Props = {
   visible: boolean;
 };
 
-const SubMenu: FC<Props> = ({ items, visible }: Props) => (
+const SubMenu = ({ items, visible }: Props): JSX.Element => (
   <ul
     className={`${styles['sub-menu']} ${visible && styles['sub-menu_visible']}`}
   >

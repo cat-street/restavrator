@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { useState } from 'react';
 
 import ActiveLink from '../ActiveLink/ActiveLink';
 import styles from './MainMenu.module.scss';
@@ -9,7 +9,7 @@ type Props = {
   item: MenuItem;
 };
 
-const MainMenuItem: FC<Props> = ({ item }: Props) => {
+const MainMenuItem = ({ item }: Props): JSX.Element => {
   const [subMenuVisible, setSubMenuVisible] = useState(false);
 
   const showSubMenu = () => {

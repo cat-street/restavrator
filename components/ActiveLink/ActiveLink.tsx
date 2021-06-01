@@ -1,5 +1,5 @@
 import {
-  Children, FC, ReactElement, cloneElement,
+  Children, ReactElement, cloneElement,
 } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -11,13 +11,13 @@ type Props = {
   children: ReactElement;
 };
 
-const ActiveLink: FC<Props> = ({
+const ActiveLink = ({
   children,
   activeClassName,
   href,
   propsAs,
   ...props
-}: Props) => {
+}: Props): JSX.Element => {
   const { asPath } = useRouter();
   const child = Children.only(children);
   const childClassName: string = children.props.className || '';

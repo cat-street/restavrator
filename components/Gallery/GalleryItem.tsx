@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -10,7 +9,7 @@ type Props = {
   onClick: () => void;
 };
 
-const GalleryItem: FC<Props> = ({ url, text, onClick }: Props) => (
+const GalleryItem = ({ url, text, onClick }: Props): JSX.Element => (
   <li>
     <div className={styles['gallery__image-container']}>
       <Image

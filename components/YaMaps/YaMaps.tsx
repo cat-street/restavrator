@@ -1,11 +1,9 @@
-import { FC } from 'react';
-
 type Props = {
   width: string;
   height: string;
 };
 
-const YaMaps: FC<Props> = ({ width, height }: Props) => (
+const YaMaps = ({ width, height }: Props): JSX.Element => (
   <iframe
     title="Yandex Maps"
     src="https://yandex.ru/map-widget/v1/?um=constructor%3AhzHt4u-0nsSHnXVJCBAhUNTSlATc4nFl&amp;source=constructor"

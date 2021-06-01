@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -6,7 +5,7 @@ import ContentContainer from '../../ContentContainer/ContentContainer';
 import styles from './Featured.module.scss';
 import Button from '../../Button/Button';
 
-const Featured: FC = () => (
+const Featured = (): JSX.Element => (
   <section className={styles.featured}>
     <ContentContainer>
       <ul className={styles.featured__list}>

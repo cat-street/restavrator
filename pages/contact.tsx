@@ -1,9 +1,7 @@
-import { ReactElement } from 'react';
-
 import Layout from '../components/Layout/Layout';
 import ContactPage from '../components/ContactPage/ContactPage';
 
-function Contact(): ReactElement {
+function Contact(): JSX.Element {
   return (
     <Layout title="Контакты - НПП Реставрационный центр">
       <ContactPage />

@@ -21,20 +21,19 @@ const MainMenuItem: FC<Props> = ({ item }: Props) => {
   };
 
   const itemButton = (
-    <button
-      type="button"
-      className={styles['main-menu__link']}
-      onMouseOver={showSubMenu}
-      onFocus={showSubMenu}
-      onMouseOut={hideSubMenu}
-      onBlur={hideSubMenu}
-    >
+    <button type="button" className={styles['main-menu__link']}>
       {item.name}
     </button>
   );
 
   return (
-    <li className={styles['main-menu__item']}>
+    <li
+      className={styles['main-menu__item']}
+      onMouseOver={showSubMenu}
+      onFocus={showSubMenu}
+      onMouseOut={hideSubMenu}
+      onBlur={hideSubMenu}
+    >
       {item.link ? (
         <ActiveLink
           href={item.link}
@@ -45,14 +44,7 @@ const MainMenuItem: FC<Props> = ({ item }: Props) => {
       ) : (
         itemButton
       )}
-      {item.sub && (
-        <SubMenu
-          items={item.sub}
-          visible={subMenuVisible}
-          hideMenu={hideSubMenu}
-          showMenu={showSubMenu}
-        />
-      )}
+      {item.sub && <SubMenu items={item.sub} visible={subMenuVisible} />}
     </li>
   );
 };

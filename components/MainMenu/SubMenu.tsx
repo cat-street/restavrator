@@ -7,17 +7,11 @@ import SubMenuItem from './SubMenuItem';
 type Props = {
   items: MenuItem[];
   visible: boolean;
-  hideMenu: () => void;
-  showMenu: () => void;
 };
 
-const SubMenu: FC<Props> = ({
-  items, visible, hideMenu, showMenu,
-}: Props) => (
+const SubMenu: FC<Props> = ({ items, visible }: Props) => (
   <ul
     className={`${styles['sub-menu']} ${visible && styles['sub-menu_visible']}`}
-    onMouseEnter={showMenu}
-    onMouseLeave={hideMenu}
   >
     {items.map((el) => (
       <SubMenuItem key={el.name} item={el} />

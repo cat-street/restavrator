@@ -1,7 +1,10 @@
 .gallery {
+  max-width: 2560px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(400px, 1fr));
   gap: 32px;
+
+  margin: 0 auto;
 
   &__image-container {
     position: relative;

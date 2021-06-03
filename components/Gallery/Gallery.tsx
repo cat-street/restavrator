@@ -3,11 +3,11 @@ import { useState, memo } from 'react';
 import GalleryLightbox from './GalleryLightbox';
 import GalleryItem from './GalleryItem';
 
+import { GalleryImage } from '../../types';
 import styles from './Gallery.module.scss';
 
 type Props = {
-  // type: string;
-  gallery: { id: string; url: string; text: string }[];
+  gallery: GalleryImage[];
 };
 
 const Gallery = ({ gallery }: Props): JSX.Element => {

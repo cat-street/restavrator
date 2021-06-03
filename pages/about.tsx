@@ -1,12 +1,12 @@
 import Layout from '../components/Layout/Layout';
-import AboutPage from '../components/AboutPage/AboutPage';
+import About from '../components/About/About';
 
-function About(): JSX.Element {
+function AboutPage(): JSX.Element {
   return (
     <Layout title="О компании - НПП Реставрационный центр">
-      <AboutPage />
+      <About />
     </Layout>
   );
 }
 
-export default About;
+export default AboutPage;

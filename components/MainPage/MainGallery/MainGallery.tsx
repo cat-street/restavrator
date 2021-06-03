@@ -1,5 +1,6 @@
 import Gallery from '../../Gallery/Gallery';
 import SectionTitle from '../../SectionTitle/SectionTitle';
+
 import mainGallery from '../../../data/mainGallery.json';
 import styles from './MainGallery.module.scss';
 

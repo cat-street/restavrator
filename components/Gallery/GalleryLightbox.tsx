@@ -2,11 +2,12 @@ import { SyntheticEvent, useEffect, useRef } from 'react';
 import CSSTransition from 'react-transition-group/CSSTransition';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { GalleryImage } from '../../types';
 import styles from './Gallery.module.scss';
 
 type Props = {
   showModal: boolean;
-  gallery: { id: string; url: string; text: string }[];
+  gallery: GalleryImage[];
   imageIndex: number;
   onClose: () => void;
   setImage: (index: number) => void;

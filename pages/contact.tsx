@@ -1,12 +1,12 @@
 import Layout from '../components/Layout/Layout';
-import ContactPage from '../components/ContactPage/ContactPage';
+import Contacts from '../components/Contacts/Contacts';
 
-function Contact(): JSX.Element {
+function ContactPage(): JSX.Element {
   return (
     <Layout title="Контакты - НПП Реставрационный центр">
-      <ContactPage />
+      <Contacts />
     </Layout>
   );
 }
 
-export default Contact;
+export default ContactPage;

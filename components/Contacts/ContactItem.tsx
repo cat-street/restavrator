@@ -2,7 +2,7 @@ import { PropsWithChildren } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-import styles from './ContactPage.module.scss';
+import styles from './Contacts.module.scss';
 
 type Props = PropsWithChildren<{
   title: string;
@@ -10,11 +10,11 @@ type Props = PropsWithChildren<{
 }>;
 
 const ContactItem = ({ title, icon, children }: Props): JSX.Element => (
-  <li className={styles['contact__list-item']}>
-    <FontAwesomeIcon icon={icon} className={styles.contact__icon} />
+  <li className={styles['contacts__list-item']}>
+    <FontAwesomeIcon icon={icon} className={styles.contacts__icon} />
     <div>
-      <h4 className={styles['contact__item-title']}>{title}</h4>
-      <p className={styles['contact__item-text']}>{children}</p>
+      <h4 className={styles['contacts__item-title']}>{title}</h4>
+      <p className={styles['contacts__item-text']}>{children}</p>
     </div>
   </li>
 );

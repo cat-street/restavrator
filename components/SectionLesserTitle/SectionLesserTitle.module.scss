@@ -1,0 +1,10 @@
+@import 'styles/variables.scss';
+
+.lesser-title {
+  margin: 0;
+  padding-bottom: $font-size * 1.5;
+
+  font-size: $header-size;
+  font-weight: 400;
+  border-bottom: 1px solid #eee;
+}

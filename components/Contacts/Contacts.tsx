@@ -2,21 +2,21 @@ import ContentContainer from '../ContentContainer/ContentContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import YaMaps from '../YaMaps/YaMaps';
 
-import styles from './ContactPage.module.scss';
+import styles from './Contacts.module.scss';
 import ContactItem from './ContactItem';
 
-const ContactPage = (): JSX.Element => (
-  <section className={styles.contact}>
+const Contacts = (): JSX.Element => (
+  <section className={styles.contacts}>
     <ContentContainer>
-      <div className={styles.contact__container}>
+      <div className={styles.contacts__container}>
         <SectionTitle
           title="Контактная информация"
           subtitle='ООО "НПП Реставрационный центр"'
         />
-        <div className={styles.contact__columns}>
-          <ul className={styles.contact__list}>
+        <div className={styles.contacts__columns}>
+          <ul className={styles.contacts__list}>
             <ContactItem title="Адрес" icon={['far', 'building']}>
-              <p className={styles['contact__item-text']}>
+              <p className={styles['contacts__item-text']}>
                 <a
                   href="https://yandex.ru/maps/-/CCQ6rXsA-C"
                   target="_blank"
@@ -29,16 +29,16 @@ const ContactPage = (): JSX.Element => (
               </p>
             </ContactItem>
             <ContactItem title="Юридический адрес" icon={['far', 'building']}>
-              <p className={styles['contact__item-text']}>
+              <p className={styles['contacts__item-text']}>
                 111024, г. Москва, ул. Авиамоторная, д. 8А стр. 5
                 <br />
                 этаж 3 пом. I часть ком. №15
               </p>
             </ContactItem>
           </ul>
-          <ul className={styles.contact__list}>
+          <ul className={styles.contacts__list}>
             <ContactItem title="E-mail" icon={['far', 'envelope']}>
-              <p className={styles['contact__item-text']}>
+              <p className={styles['contacts__item-text']}>
                 <a
                   href="mailto:resproekt@yandex.ru"
                   target="_blank"
@@ -49,7 +49,7 @@ const ContactPage = (): JSX.Element => (
               </p>
             </ContactItem>
             <ContactItem title="Телефоны" icon={['fas', 'mobile-alt']}>
-              <p className={styles['contact__item-text']}>
+              <p className={styles['contacts__item-text']}>
                 <ul>
                   <li>
                     <a href="tel:+74957644232">+7 (495) 764-42-32</a>
@@ -71,4 +71,4 @@ const ContactPage = (): JSX.Element => (
   </section>
 );
 
-export default ContactPage;
+export default Contacts;

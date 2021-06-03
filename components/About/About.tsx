@@ -2,9 +2,9 @@ import Image from 'next/image';
 import ContentContainer from '../ContentContainer/ContentContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
-import styles from './AboutPage.module.scss';
+import styles from './About.module.scss';
 
-const AboutPage = (): JSX.Element => (
+const About = (): JSX.Element => (
   <section className={styles.about}>
     <ContentContainer>
       <div className={styles.about__container}>
@@ -72,4 +72,4 @@ const AboutPage = (): JSX.Element => (
   </section>
 );
 
-export default AboutPage;
+export default About;

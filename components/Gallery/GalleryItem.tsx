@@ -5,7 +5,7 @@ import styles from './Gallery.module.scss';
 
 type Props = {
   url: string;
-  text: string;
+  text?: string;
   onClick: () => void;
 };
 
@@ -30,8 +30,12 @@ const GalleryItem = ({ url, text, onClick }: Props): JSX.Element => (
         />
       </button>
     </div>
-    <p className={styles.gallery__text}>{text}</p>
+    {text && <p className={styles.gallery__text}>{text}</p>}
   </li>
 );
+
+GalleryItem.defaultProps = {
+  text: undefined,
+};
 
 export default GalleryItem;

@@ -9,7 +9,7 @@
 
     font-size: $header-size;
     font-weight: 400;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $slight-border;
   }
 
   &__subheader {
@@ -67,6 +67,6 @@
     font-size: $font-size * 0.9;
     color: $dim-text;
     line-height: 1.5;
-    border-right: 5px solid #eee;
+    border-right: 5px solid $slight-border;
   }
 }

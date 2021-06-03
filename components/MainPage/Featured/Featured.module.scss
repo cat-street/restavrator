@@ -23,11 +23,7 @@
   }
 
   &__image {
-    transition: transform 500ms ease-out;
-  }
-
-  &__image:hover {
-    transform: scale(1.1);
+    @extend %zoom-effect;
   }
 
   &__text {

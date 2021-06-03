@@ -1,5 +1,7 @@
 import { PropsWithChildren, MouseEventHandler, forwardRef } from 'react';
-import getStyles from '../../utils/getStyles';
+
+import getStyles from 'utils/getStyles';
+
 import styles from './Button.module.scss';
 
 type Props = PropsWithChildren<{

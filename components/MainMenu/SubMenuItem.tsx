@@ -1,7 +1,8 @@
 import Link from 'next/link';
 
+import { MenuItem } from 'types';
+
 import styles from './MainMenu.module.scss';
-import { MenuItem } from '../../types';
 
 type Props = {
   item: MenuItem;

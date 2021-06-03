@@ -1,6 +1,8 @@
-import styles from './MainMenu.module.scss';
-import { MenuItem } from '../../types';
+import { MenuItem } from 'types';
+
 import SubMenuItem from './SubMenuItem';
+
+import styles from './MainMenu.module.scss';
 
 type Props = {
   items: MenuItem[];

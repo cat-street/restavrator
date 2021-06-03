@@ -1,7 +1,8 @@
-import ContentContainer from '../../ContentContainer/ContentContainer';
-import styles from './Experience.module.scss';
+import ContentContainer from 'components/ContentContainer/ContentContainer';
+import SectionTitle from 'components/SectionTitle/SectionTitle';
 import ExperienceCard from './ExperienceCard';
-import SectionTitle from '../../SectionTitle/SectionTitle';
+
+import styles from './Experience.module.scss';
 
 const Experience = (): JSX.Element => (
   <section className={styles.experience}>

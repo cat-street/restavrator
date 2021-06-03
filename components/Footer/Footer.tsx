@@ -1,23 +1,14 @@
-import { useMemo } from 'react';
-
 import styles from './Footer.module.scss';
 
-const Footer = (): JSX.Element => {
-  const getYear = useMemo(() => {
-    const date = new Date();
-    return date.getFullYear();
-  }, []);
+const date = new Date().getFullYear();
 
-  return (
-    <section className={styles.footer}>
-      <p className={styles.footer__copyright}>
-        &copy; 1991-
-        {getYear}
-        {' '}
-        ООО &quot;НПП Реставрационный центр&quot;
-      </p>
-    </section>
-  );
-};
+const Footer = (): JSX.Element => (
+  <section className={styles.footer}>
+    <p className={styles.footer__copyright}>
+      &copy; 1991-
+      {date} ООО &quot;НПП Реставрационный центр&quot;
+    </p>
+  </section>
+);
 
 export default Footer;

@@ -1,9 +1,10 @@
-import ContentContainer from '../ContentContainer/ContentContainer';
-import SectionLesserTitle from '../SectionLesserTitle/SectionLesserTitle';
+import ContentContainer from 'components/ContentContainer/ContentContainer';
+import SectionLesserTitle from 'components/SectionLesserTitle/SectionLesserTitle';
+import ProjectPreviews from 'components/ProjectPreviews/ProjectPreviews';
 
-import books from '../../data/books.json';
+import books from 'data/books.json';
+
 import styles from './Books.module.scss';
-import ProjectPreviews from '../ProjectPreviews/ProjectPreviews';
 
 const Books = (): JSX.Element => (
   <section className={styles.books}>

@@ -1,6 +1,8 @@
-import styles from './MainMenu.module.scss';
-import mainMenu from '../../data/mainMenu.json';
+import mainMenu from 'data/mainMenu.json';
+
 import MainMenuItem from './MainMenuItem';
+
+import styles from './MainMenu.module.scss';
 
 const MainMenu = (): JSX.Element => (
   <nav className={styles['main-menu']}>

@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import ContentContainer from '../ContentContainer/ContentContainer';
-import SectionTitle from '../SectionTitle/SectionTitle';
+
+import ContentContainer from 'components/ContentContainer/ContentContainer';
+import SectionTitle from 'components/SectionTitle/SectionTitle';
 
 import styles from './About.module.scss';
 

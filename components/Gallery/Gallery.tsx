@@ -1,9 +1,10 @@
-import { useState, memo } from 'react';
+import { useState } from 'react';
+
+import { GalleryImage } from 'types';
 
 import GalleryLightbox from './GalleryLightbox';
 import GalleryItem from './GalleryItem';
 
-import { GalleryImage } from '../../types';
 import styles from './Gallery.module.scss';
 
 type Props = {
@@ -46,4 +47,4 @@ const Gallery = ({ gallery }: Props): JSX.Element => {
   );
 };
 
-export default memo(Gallery);
+export default Gallery;

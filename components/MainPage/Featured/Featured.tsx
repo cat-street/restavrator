@@ -1,6 +1,6 @@
-import ContentContainer from '../../ContentContainer/ContentContainer';
+import ContentContainer from 'components/ContentContainer/ContentContainer';
 
-import featuredData from '../../../data/featured.json';
+import featuredData from 'data/featured.json';
 
 import styles from './Featured.module.scss';
 import FeaturedItem from './FeaturedItem';

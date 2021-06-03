@@ -22,14 +22,9 @@ const ActiveLink = ({
   const child = Children.only(children);
   const childClassName: string = children.props.className || '';
 
-  // pages/index.js will be matched via props.href
-  // pages/about.js will be matched via props.href
-  // pages/[slug].js will be matched via props.as
-  // eslint-disable-next-line operator-linebreak
-  const className =
-    asPath === href || asPath === propsAs
-      ? `${childClassName} ${activeClassName}`.trim()
-      : childClassName;
+  const className = asPath === href || asPath === propsAs
+    ? `${childClassName} ${activeClassName}`.trim()
+    : childClassName;
 
   return (
     <Link href={href} {...props}>

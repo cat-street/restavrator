@@ -1,7 +1,8 @@
-import Gallery from '../../Gallery/Gallery';
-import SectionTitle from '../../SectionTitle/SectionTitle';
+import mainGallery from 'data/mainGallery.json';
 
-import mainGallery from '../../../data/mainGallery.json';
+import Gallery from 'components/Gallery/Gallery';
+import SectionTitle from 'components/SectionTitle/SectionTitle';
+
 import styles from './MainGallery.module.scss';
 
 const MainGallery = (): JSX.Element => (

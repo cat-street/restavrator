@@ -1,8 +1,9 @@
 import { SyntheticEvent, useEffect, useRef } from 'react';
-import CSSTransition from 'react-transition-group/CSSTransition';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import CSSTransition from 'react-transition-group/CSSTransition';
 
-import { GalleryImage } from '../../types';
+import { GalleryImage } from 'types';
+
 import styles from './Gallery.module.scss';
 
 type Props = {

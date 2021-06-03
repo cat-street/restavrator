@@ -1,6 +1,8 @@
-import { Project } from '../../types';
-import styles from './ProjectPreviews.module.scss';
+import { Project } from 'types';
+
 import ProjectPreviewsItem from './ProjectPreviewsItem';
+
+import styles from './ProjectPreviews.module.scss';
 
 type Props = {
   projects: Project[];

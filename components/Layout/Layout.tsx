@@ -1,8 +1,9 @@
 import { PropsWithChildren } from 'react';
 import Head from 'next/head';
-import Header from '../Header/Header';
-import AboutSection from '../AboutSection/AboutSection';
-import Footer from '../Footer/Footer';
+
+import Header from 'components/Header/Header';
+import AboutSection from 'components/AboutSection/AboutSection';
+import Footer from 'components/Footer/Footer';
 
 type Props = PropsWithChildren<{
   title?: string;

@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import ContentContainer from '../ContentContainer/ContentContainer';
+
+import ContentContainer from 'components/ContentContainer/ContentContainer';
 
 import styles from './InfoPage.module.scss';
 

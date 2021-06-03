@@ -1,9 +1,9 @@
-import ContentContainer from '../ContentContainer/ContentContainer';
-import SectionTitle from '../SectionTitle/SectionTitle';
-import YaMaps from '../YaMaps/YaMaps';
+import ContentContainer from 'components/ContentContainer/ContentContainer';
+import SectionTitle from 'components/SectionTitle/SectionTitle';
+import YaMaps from 'components/YaMaps/YaMaps';
+import ContactItem from './ContactItem';
 
 import styles from './Contacts.module.scss';
-import ContactItem from './ContactItem';
 
 const Contacts = (): JSX.Element => (
   <section className={styles.contacts}>

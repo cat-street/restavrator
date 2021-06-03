@@ -1,5 +1,5 @@
-import ContentContainer from '../ContentContainer/ContentContainer';
-import YaMaps from '../YaMaps/YaMaps';
+import ContentContainer from 'components/ContentContainer/ContentContainer';
+import YaMaps from 'components/YaMaps/YaMaps';
 
 import styles from './AboutSection.module.scss';
 

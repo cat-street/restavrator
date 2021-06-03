@@ -1,9 +1,11 @@
 import { useState } from 'react';
 
-import ActiveLink from '../ActiveLink/ActiveLink';
-import styles from './MainMenu.module.scss';
-import { MenuItem } from '../../types';
+import { MenuItem } from 'types';
+
+import ActiveLink from 'components/ActiveLink/ActiveLink';
 import SubMenu from './SubMenu';
+
+import styles from './MainMenu.module.scss';
 
 type Props = {
   item: MenuItem;

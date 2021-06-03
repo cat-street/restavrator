@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
-import { Project } from '../../types';
+import { Project } from 'types';
+
 import styles from './ProjectPreviews.module.scss';
 
 type Props = {

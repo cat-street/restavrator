@@ -1,5 +1,5 @@
-import Layout from '../components/Layout/Layout';
-import Books from '../components/Books/Books';
+import Layout from 'components/Layout/Layout';
+import Books from 'components/Books/Books';
 
 function BooksPage(): JSX.Element {
   return (

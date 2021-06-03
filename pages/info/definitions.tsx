@@ -1,5 +1,5 @@
-import InfoDefinitions from '../../components/InfoPage/InfoDefinitions';
-import Layout from '../../components/Layout/Layout';
+import InfoDefinitions from 'components/InfoPage/InfoDefinitions';
+import Layout from 'components/Layout/Layout';
 
 function Definitions(): JSX.Element {
   return (

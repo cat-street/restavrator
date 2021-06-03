@@ -1,5 +1,5 @@
-import InfoOrder from '../../components/InfoPage/InfoOrder';
-import Layout from '../../components/Layout/Layout';
+import InfoOrder from 'components/InfoPage/InfoOrder';
+import Layout from 'components/Layout/Layout';
 
 function Order(): JSX.Element {
   return (

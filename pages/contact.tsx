@@ -1,5 +1,5 @@
-import Layout from '../components/Layout/Layout';
-import Contacts from '../components/Contacts/Contacts';
+import Layout from 'components/Layout/Layout';
+import Contacts from 'components/Contacts/Contacts';
 
 function ContactPage(): JSX.Element {
   return (

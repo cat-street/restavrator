@@ -1,5 +1,5 @@
-import InfoContents from '../../components/InfoPage/InfoContents';
-import Layout from '../../components/Layout/Layout';
+import InfoContents from 'components/InfoPage/InfoContents';
+import Layout from 'components/Layout/Layout';
 
 function Contents(): JSX.Element {
   return (

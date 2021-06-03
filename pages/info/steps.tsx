@@ -1,5 +1,5 @@
-import InfoSteps from '../../components/InfoPage/InfoSteps';
-import Layout from '../../components/Layout/Layout';
+import InfoSteps from 'components/InfoPage/InfoSteps';
+import Layout from 'components/Layout/Layout';
 
 function Steps(): JSX.Element {
   return (

@@ -18,8 +18,8 @@ import {
   faMobileAlt,
 } from '@fortawesome/free-solid-svg-icons';
 
-import '../styles/variables.scss';
-import '../styles/globals.scss';
+import 'styles/variables.scss';
+import 'styles/globals.scss';
 
 library.add(
   faThumbsUp,

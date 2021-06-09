@@ -9,6 +9,7 @@ type Props = {
   item: {
     cover: string;
     title: string;
+    url: string;
     alt: string;
     description: string;
   };
@@ -26,7 +27,7 @@ const FeaturedItem = ({ item }: Props): JSX.Element => (
       />
     </div>
     <div className={styles.featured__text}>
-      <Link href="/projects">
+      <Link href={item.url}>
         <Button buttonStyles={['button_style_regular', 'button_size_regular']}>
           {item.title}
         </Button>

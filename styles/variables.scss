@@ -3,7 +3,7 @@ $main-text: #343434;
 $dim-text: #808080;
 $main-bright: #fff;
 $secondary-bg: #f3f6f9;
-$dark-bg: #0D1923;
+$dark-bg: #0d1923;
 $link-hover: #3991dd;
 $slight-border: #eee;
 
@@ -15,6 +15,24 @@ $gap: 56px;
 $font-size: 16px;
 $header-size: 36px;
 $secondary-font: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+
+$sizes: (
+  'xs': 320px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+);
+
+@mixin mediaMax($media) {
+  @each $size, $resolution in $sizes {
+    @if $media == $size {
+      @media screen and (max-width: $resolution) {
+        @content;
+      }
+    }
+  }
+}
 
 @mixin focus-outline($color) {
   outline: none;

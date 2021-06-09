@@ -1,15 +1,19 @@
 import ContentContainer from 'components/ContentContainer/ContentContainer';
 
-import featuredData from 'data/featured.json';
+import { FeaturedArrayItem } from 'types';
 
-import styles from './Featured.module.scss';
 import FeaturedItem from './FeaturedItem';
+import styles from './Featured.module.scss';
 
-const Featured = (): JSX.Element => (
+type Props = {
+  data: FeaturedArrayItem[];
+};
+
+const Featured = ({ data }: Props): JSX.Element => (
   <section className={styles.featured}>
     <ContentContainer>
       <ul className={styles.featured__list}>
-        {featuredData.items.map((el) => (
+        {data.map((el) => (
           <FeaturedItem key={el.id} item={el} />
         ))}
       </ul>

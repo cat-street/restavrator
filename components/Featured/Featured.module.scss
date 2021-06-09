@@ -6,13 +6,17 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: $gap;
   }
 
   &__item {
-    flex: 1 1 0;
+    flex: 1;
+    max-width: 500px;
+
     background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
   }
 
   &__image-container {

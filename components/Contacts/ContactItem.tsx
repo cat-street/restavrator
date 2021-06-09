@@ -14,7 +14,7 @@ const ContactItem = ({ title, icon, children }: Props): JSX.Element => (
     <FontAwesomeIcon icon={icon} className={styles.contacts__icon} />
     <div>
       <h4 className={styles['contacts__item-title']}>{title}</h4>
-      <p className={styles['contacts__item-text']}>{children}</p>
+      <div className={styles['contacts__item-text']}>{children}</div>
     </div>
   </li>
 );

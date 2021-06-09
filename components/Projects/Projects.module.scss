@@ -1,0 +1,52 @@
+@import 'styles/variables.scss';
+
+.projects {
+  @extend %module-padding;
+
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+
+  &-container {
+    padding-top: $vertical-padding;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: $gap;
+  }
+
+  &__element {
+    &_size {
+      &_25 {
+        flex: 1;
+      }
+      &_50 {
+        flex: 2;
+      }
+      &_75 {
+        flex: 3;
+      }
+    }
+    &_flex {
+      display: flex;
+      flex-direction: column;
+      gap: $font-size;
+    }
+  }
+
+  &__text, &__info {
+    margin: 0;
+
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  &__info {
+    padding: 10px 20px;
+
+    border: 1px solid $main-accent;
+    border-radius: 10px;
+  }
+}

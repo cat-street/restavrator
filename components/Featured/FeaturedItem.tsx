@@ -3,16 +3,12 @@ import Link from 'next/link';
 
 import Button from 'components/Button/Button';
 
+import { FeaturedArrayItem } from 'types';
+
 import styles from './Featured.module.scss';
 
 type Props = {
-  item: {
-    cover: string;
-    title: string;
-    url: string;
-    alt: string;
-    description: string;
-  };
+  item: FeaturedArrayItem;
 };
 
 const FeaturedItem = ({ item }: Props): JSX.Element => (
@@ -32,7 +28,7 @@ const FeaturedItem = ({ item }: Props): JSX.Element => (
           {item.title}
         </Button>
       </Link>
-      <p className={styles.featured__description}>{item.description}</p>
+      {item.description && <p className={styles.featured__description}>{item.description}</p>}
     </div>
   </li>
 );

@@ -17,3 +17,12 @@ export interface Project {
   description?: string;
   images: GalleryImage[];
 }
+
+export interface FeaturedArrayItem {
+  id: string;
+  cover: string;
+  title: string;
+  url: string;
+  alt: string;
+  description: string;
+}

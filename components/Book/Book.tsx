@@ -7,13 +7,13 @@ import Button from 'components/Button/Button';
 
 import { Project } from 'types';
 
-import styles from './BookPage.module.scss';
+import styles from './Book.module.scss';
 
 type Props = {
   book: Project;
 };
 
-const BookPage = ({ book }: Props): JSX.Element => (
+const Book = ({ book }: Props): JSX.Element => (
   <section className={styles['book-page']}>
     <ContentContainer>
       <SectionLesserTitle>{book.title}</SectionLesserTitle>
@@ -30,4 +30,4 @@ const BookPage = ({ book }: Props): JSX.Element => (
   </section>
 );
 
-export default BookPage;
+export default Book;

@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "id": "fr01",
+      "cover": "/images/projects/research/kusk_03.jpg",
+      "title": "Примеры исследований",
+      "alt": "Павильон усадьбы Кусково",
+      "url": "/research/samples",
+      "description": ""
+    }
+  ]
+}

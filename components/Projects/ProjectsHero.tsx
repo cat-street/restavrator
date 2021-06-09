@@ -1,4 +1,4 @@
-import styles from './ProjectsHero.module.scss';
+import styles from './Projects.module.scss';
 
 type Props = {
   type: string;

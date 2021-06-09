@@ -1,20 +1,20 @@
 import ContentContainer from 'components/ContentContainer/ContentContainer';
 import Featured from 'components/Featured/Featured';
 
-import featuredProjects from 'data/featuredProjects.json';
+import featuredResearch from 'data/featuredResearch.json';
 
 import ProjectsContainer from './ProjectsContainer';
 import ProjectsHero from './ProjectsHero';
-import ProjectsDescription from './ProjectsDescription';
+import ResearchDescription from './ResearchDescription';
 
-const Projects = (): JSX.Element => (
+const Research = (): JSX.Element => (
   <ProjectsContainer>
-    <ProjectsHero type="projects" />
+    <ProjectsHero type="research" />
     <ContentContainer>
-      <ProjectsDescription />
+      <ResearchDescription />
     </ContentContainer>
-    <Featured data={featuredProjects.items} />
+    <Featured data={featuredResearch.items} />
   </ProjectsContainer>
 );
 
-export default Projects;
+export default Research;

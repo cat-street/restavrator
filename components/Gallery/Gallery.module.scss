@@ -1,3 +1,5 @@
+@import 'styles/variables.scss';
+
 .gallery {
   max-width: 2560px;
   display: grid;
@@ -5,6 +7,18 @@
   gap: 32px;
 
   margin: 0 auto;
+
+  @include mediaMax('xl') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include mediaMax('lg') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mediaMax('sm') {
+    grid-template-columns: 1fr;
+  }
 
   &__image-container {
     position: relative;
@@ -164,9 +178,19 @@
 
 @supports not (aspect-ratio: 1 / 1) {
   .gallery {
-    &__image-container {
-      height: 0;
-      padding-bottom: 66.6%;
+    &_type {
+      &_square {
+        .gallery__image-container {
+          height: 0;
+          padding-bottom: 100%;
+        }
+      }
+      &_rectangle {
+        .gallery__image-container {
+          height: 0;
+          padding-bottom: 66.6%;
+        }
+      }
     }
   }
 }

@@ -24,7 +24,6 @@ const Gallery = ({ type, gallery }: Props): JSX.Element => {
   const handleClose = () => {
     setLightboxOpen(false);
   };
-  console.log(styles.gallery_type_rectangle);
 
   return (
     <>

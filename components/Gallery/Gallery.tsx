@@ -8,10 +8,11 @@ import GalleryItem from './GalleryItem';
 import styles from './Gallery.module.scss';
 
 type Props = {
+  type: string;
   gallery: GalleryImage[];
 };
 
-const Gallery = ({ gallery }: Props): JSX.Element => {
+const Gallery = ({ type, gallery }: Props): JSX.Element => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -23,6 +24,7 @@ const Gallery = ({ gallery }: Props): JSX.Element => {
   const handleClose = () => {
     setLightboxOpen(false);
   };
+  console.log(styles.gallery_type_rectangle);
 
   return (
     <>
@@ -33,7 +35,7 @@ const Gallery = ({ gallery }: Props): JSX.Element => {
         onClose={handleClose}
         setImage={setCurrentImageIndex}
       />
-      <ul className={styles.gallery}>
+      <ul className={`${styles.gallery} ${styles[`gallery_type_${type}`]}`}>
         {gallery.map((el, i) => (
           <GalleryItem
             url={el.url}

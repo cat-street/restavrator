@@ -8,7 +8,7 @@ import styles from './MainGallery.module.scss';
 const MainGallery = (): JSX.Element => (
   <section className={styles['main-gallery']}>
     <SectionTitle title="Галерея" subtitle="Наши объекты" />
-    <Gallery gallery={mainGallery.items} />
+    <Gallery gallery={mainGallery.items} type="rectangle" />
   </section>
 );
 

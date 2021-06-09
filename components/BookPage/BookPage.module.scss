@@ -1,0 +1,10 @@
+@import 'styles/variables.scss';
+
+.book-page {
+  @extend %section-padding;
+
+  &__description {
+    font-size: $font-size * 1.1;
+    margin: $font-size 0 $font-size * 2;
+  }
+}

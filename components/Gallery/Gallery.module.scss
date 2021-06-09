@@ -1,7 +1,7 @@
 .gallery {
   max-width: 2560px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(400px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
 
   margin: 0 auto;
@@ -9,7 +9,6 @@
   &__image-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 3 / 2;
   }
 
   &__text {
@@ -38,6 +37,19 @@
   &__overlay-icon {
     width: 50px;
     color: #fff;
+  }
+
+  &_type {
+    &_square {
+      .gallery__image-container {
+        aspect-ratio: 1 / 1;
+      }
+    }
+    &_rectangle {
+      .gallery__image-container {
+        aspect-ratio: 3 / 2;
+      }
+    }
   }
 }
 
@@ -73,7 +85,7 @@
 
   &__image {
     max-width: 80vw;
-    max-height: 80vh;
+    max-height: 90vh;
   }
 
   &__text {

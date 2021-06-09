@@ -1,8 +1,8 @@
 @import 'styles/variables.scss';
 
 .experience {
+  @extend %module-padding;
   background: url('/images/vdnh_bg.jpg') 50% 48% / cover no-repeat;
-  padding: $vertical-padding $side-padding;
 
   &__cards {
     display: flex;

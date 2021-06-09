@@ -1,5 +1,5 @@
 @import 'styles/variables.scss';
 
 .books {
-  padding: $vertical-padding * 1.5 $side-padding $vertical-padding;
+  @extend %section-padding;
 }

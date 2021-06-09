@@ -1,7 +1,7 @@
 @import 'styles/variables.scss';
 
 .about {
-  padding: $vertical-padding * 1.5 $side-padding $vertical-padding;
+  @extend %section-padding;
 
   &__container {
     display: grid;

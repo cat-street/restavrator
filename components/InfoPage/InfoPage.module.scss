@@ -1,7 +1,7 @@
 @import 'styles/variables.scss';
 
 .info {
-  padding: $vertical-padding * 1.5 $side-padding $vertical-padding;
+  @extend %section-padding;
 
   &__header {
     margin: 0;

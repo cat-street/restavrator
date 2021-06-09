@@ -1,7 +1,7 @@
 @import 'styles/variables.scss';
 
 .about {
-  padding: $vertical-padding $side-padding;
+  @extend %module-padding;
   background-color: $dark-bg;
   color: $main-bright;
 

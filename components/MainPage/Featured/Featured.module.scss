@@ -1,8 +1,8 @@
 @import 'styles/variables.scss';
 
 .featured {
+  @extend %module-padding;
   background-color: $secondary-bg;
-  padding: $vertical-padding $side-padding;
 
   &__list {
     display: flex;

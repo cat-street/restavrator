@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { MenuItem } from 'types';
 
-import ActiveLink from 'components/ActiveLink/ActiveLink';
+import ActiveLink from 'components/common/ActiveLink/ActiveLink';
 import SubMenu from './SubMenu';
 
 import styles from './MainMenu.module.scss';

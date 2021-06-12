@@ -1,4 +1,4 @@
-import ContentContainer from 'components/ContentContainer/ContentContainer';
+import ContentContainer from 'components/common/ContentContainer/ContentContainer';
 import YaMaps from 'components/YaMaps/YaMaps';
 
 import styles from './AboutSection.module.scss';

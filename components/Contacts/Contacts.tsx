@@ -1,5 +1,5 @@
-import ContentContainer from 'components/ContentContainer/ContentContainer';
-import SectionTitle from 'components/SectionTitle/SectionTitle';
+import ContentContainer from 'components/common/ContentContainer/ContentContainer';
+import SectionTitle from 'components/common/SectionTitle/SectionTitle';
 import YaMaps from 'components/YaMaps/YaMaps';
 import ContactItem from './ContactItem';
 

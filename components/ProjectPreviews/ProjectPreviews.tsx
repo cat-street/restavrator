@@ -2,8 +2,8 @@ import { useMemo } from 'react';
 
 import { Project } from 'types';
 
-import ContentContainer from 'components/common/ContentContainer/ContentContainer';
-import SectionLesserTitle from 'components/common/SectionLesserTitle/SectionLesserTitle';
+import ContentContainer from 'components/ContentContainer/ContentContainer';
+import SectionLesserTitle from 'components/SectionLesserTitle/SectionLesserTitle';
 import ProjectPreviewsItem from './ProjectPreviewsItem';
 
 import styles from './ProjectPreviews.module.scss';

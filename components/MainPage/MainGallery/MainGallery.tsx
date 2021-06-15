@@ -1,7 +1,7 @@
 import mainGallery from 'data/mainGallery.json';
 
 import Gallery from 'components/Gallery/Gallery';
-import SectionTitle from 'components/common/SectionTitle/SectionTitle';
+import SectionTitle from 'components/SectionTitle/SectionTitle';
 
 import styles from './MainGallery.module.scss';
 

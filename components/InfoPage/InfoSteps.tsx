@@ -1,4 +1,4 @@
-import ContentContainer from 'components/common/ContentContainer/ContentContainer';
+import ContentContainer from 'components/ContentContainer/ContentContainer';
 
 import styles from './InfoPage.module.scss';
 

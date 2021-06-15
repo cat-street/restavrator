@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 
-import ContentContainer from 'components/common/ContentContainer/ContentContainer';
+import ContentContainer from 'components/ContentContainer/ContentContainer';
 import MainMenu from 'components/MainMenu/MainMenu';
 
 import styles from './Header.module.scss';

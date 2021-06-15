@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import Button from 'components/common/Button/Button';
+import Button from 'components/Button/Button';
 
 import styles from './Hero.module.scss';
 

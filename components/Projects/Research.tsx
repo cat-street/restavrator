@@ -1,4 +1,4 @@
-import ContentContainer from 'components/common/ContentContainer/ContentContainer';
+import ContentContainer from 'components/ContentContainer/ContentContainer';
 import Featured from 'components/Featured/Featured';
 
 import featuredResearch from 'data/featuredResearch.json';

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-import ContentContainer from 'components/common/ContentContainer/ContentContainer';
-import SectionTitle from 'components/common/SectionTitle/SectionTitle';
+import ContentContainer from 'components/ContentContainer/ContentContainer';
+import SectionTitle from 'components/SectionTitle/SectionTitle';
 
 import styles from './About.module.scss';
 

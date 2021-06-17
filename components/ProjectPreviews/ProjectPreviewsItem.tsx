@@ -8,13 +8,14 @@ import styles from './ProjectPreviews.module.scss';
 type Props = {
   project: Project;
   category: 'books' | 'projects' | 'research';
+  subCategory: 'diploma' | 'sample' | undefined;
 };
 
-const ProjectPreviewsItem = ({ project, category }: Props): JSX.Element => (
+const ProjectPreviewsItem = ({ project, category, subCategory }: Props): JSX.Element => (
   <li className={styles.previews__item}>
     <div className={styles['previews__image-container']}>
-      <Link href={`/${category}/${project.id}`}>
-        <a href={`/${category}/${project.id}`}>
+      <Link href={`/${category}/${subCategory ? `${subCategory}/` : ''}${project.id}`}>
+        <a href={`/${category}/${subCategory ? `${subCategory}/` : ''}${project.id}`}>
           <Image
             src={project.cover}
             alt={project.title}

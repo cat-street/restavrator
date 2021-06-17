@@ -10,15 +10,15 @@ import { Project } from 'types';
 import styles from './Book.module.scss';
 
 type Props = {
-  book: Project;
+  item: Project;
 };
 
-const Book = ({ book }: Props): JSX.Element => (
+const Book = ({ item }: Props): JSX.Element => (
   <section className={styles['book-page']}>
     <ContentContainer>
-      <SectionLesserTitle>{book.title}</SectionLesserTitle>
-      <p className={styles['book-page__description']}>{book.description}</p>
-      <Gallery gallery={book.images} type="square" />
+      <SectionLesserTitle>{item.title}</SectionLesserTitle>
+      <p className={styles['book-page__description']}>{item.description}</p>
+      <Gallery gallery={item.images} type="square" />
       <div className={styles['book-page__back-container']}>
         <Link href="/books">
           <Button buttonStyles={['button_style_regular', 'button_size_small']}>

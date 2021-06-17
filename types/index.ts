@@ -14,11 +14,14 @@ export interface Project {
   id: string;
   cover: string;
   title: string;
-  register?: string;
-  address?: string;
-  type?: string;
-  description?: string;
+  description: string;
   images: GalleryImage[];
+}
+
+export interface DescriptionProject extends Project {
+  register: string;
+  address: string;
+  type: string;
 }
 
 export interface FeaturedArrayItem {

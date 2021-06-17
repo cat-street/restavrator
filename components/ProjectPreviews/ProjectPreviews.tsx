@@ -12,9 +12,12 @@ type Props = {
   title: string;
   projects: Project[];
   category: 'books' | 'projects' | 'research';
+  subCategory?: 'diploma' | 'sample';
 };
 
-const ProjectPreviews = ({ title, projects, category }: Props): JSX.Element => {
+const ProjectPreviews = ({
+  title, projects, category, subCategory,
+}: Props): JSX.Element => {
   const reversedProjects = useMemo(
     () => projects.reduceRight((red: Project[], el) => red.concat(el), []),
     [projects],
@@ -30,12 +33,21 @@ const ProjectPreviews = ({ title, projects, category }: Props): JSX.Element => {
           }`}
         >
           {reversedProjects.map((el) => (
-            <ProjectPreviewsItem key={el.id} project={el} category={category} />
+            <ProjectPreviewsItem
+              key={el.id}
+              project={el}
+              category={category}
+              subCategory={subCategory}
+            />
           ))}
         </ul>
       </ContentContainer>
     </section>
   );
+};
+
+ProjectPreviews.defaultProps = {
+  subCategory: undefined,
 };
 
 export default ProjectPreviews;

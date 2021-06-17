@@ -1,33 +1,32 @@
-import Link from 'next/link';
-
 import ContentContainer from 'components/ContentContainer/ContentContainer';
 import SectionLesserTitle from 'components/SectionLesserTitle/SectionLesserTitle';
 import Gallery from 'components/Gallery/Gallery';
-import Button from 'components/Button/Button';
 
-import { Project } from 'types';
+import { DescriptionProject } from 'types';
 
-import styles from './Book.module.scss';
+import styles from './SingleProject.module.scss';
 
 type Props = {
-  project: Project;
+  item: DescriptionProject;
 };
 
-const Book = ({ project }: Props): JSX.Element => (
-  <section className={styles['project-page']}>
+const SingleProject = ({ item }: Props): JSX.Element => (
+  <section className={styles.project}>
     <ContentContainer>
-      <SectionLesserTitle>{project.title}</SectionLesserTitle>
-      <p className={styles['project-page__description']}>{project.description}</p>
-      <Gallery gallery={project.images} type="square" />
-      <div className={styles['project-page__back-container']}>
-        <Link href="/projects">
-          <Button buttonStyles={['button_style_regular', 'button_size_small']}>
-            Назад
-          </Button>
-        </Link>
+      <SectionLesserTitle>{item.title}</SectionLesserTitle>
+      <div className={styles.project__info}>
+        <p><strong>Адрес: </strong> {item.address}</p>
+        {item.register && (<p><strong>Название в реестре: </strong> {item.register}</p>)}
+        <p className={styles.project__type}>{item.type}</p>
       </div>
+      <p
+        className={styles.project__description}
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: item.description }}
+      />
+      <Gallery gallery={item.images} type="rectangle" />
     </ContentContainer>
   </section>
 );
 
-export default Book;
+export default SingleProject;

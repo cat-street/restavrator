@@ -3,13 +3,16 @@
 .project {
   @extend %section-padding;
 
+  &__info {
+    border-bottom: 1px solid $slight-border;
+  }
+
   &__description {
     font-size: $font-size * 1.1;
     margin: $font-size 0 $font-size * 2;
   }
 
-  &__back-container {
-    padding-top: $font-size;
-    text-align: center;
+  &__type {
+    font-style: italic;
   }
 }

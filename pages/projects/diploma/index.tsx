@@ -9,6 +9,7 @@ function DiplomaProjectsPage(): JSX.Element {
       <ProjectPreviews
         title="Дипломированные проекты"
         category="projects"
+        subCategory="diploma"
         projects={projects.items}
       />
     </Layout>

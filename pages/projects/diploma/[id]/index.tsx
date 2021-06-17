@@ -1,20 +1,15 @@
 import { useRouter } from 'next/router';
 
-import Book from 'components/Book/Book';
-import Layout from 'components/Layout/Layout';
+import diplomaProjects from 'data/projectsDiploma.json';
+import ProjectPage from 'components/ProjectPage/ProjectPage';
 
-import books from 'data/books.json';
-
-const BookPage = (): JSX.Element => {
+const DiplomaPage = (): JSX.Element => {
   const router = useRouter();
   const id = router.query.id as string | undefined;
-  const currentBook = books.items.find((el) => el.id === id);
 
   return (
-    <Layout title={`${currentBook?.title} - НПП Реставрационный центр`}>
-      {currentBook && <Book book={currentBook} />}
-    </Layout>
+    <ProjectPage items={diplomaProjects.items} id={id} type="project" />
   );
 };
 
-export default BookPage;
+export default DiplomaPage;

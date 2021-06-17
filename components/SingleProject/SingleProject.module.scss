@@ -1,0 +1,15 @@
+@import 'styles/variables.scss';
+
+.project {
+  @extend %section-padding;
+
+  &__description {
+    font-size: $font-size * 1.1;
+    margin: $font-size 0 $font-size * 2;
+  }
+
+  &__back-container {
+    padding-top: $font-size;
+    text-align: center;
+  }
+}

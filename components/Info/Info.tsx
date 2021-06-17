@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 import ContentContainer from 'components/ContentContainer/ContentContainer';
 
-import styles from './InfoPage.module.scss';
+import styles from './Info.module.scss';
 
-const InfoPage = (): JSX.Element => (
+const Info = (): JSX.Element => (
   <section className={styles.info}>
     <ContentContainer>
       <h2 className={styles.info__header}>Информация</h2>
@@ -32,4 +32,4 @@ const InfoPage = (): JSX.Element => (
   </section>
 );
 
-export default InfoPage;
+export default Info;

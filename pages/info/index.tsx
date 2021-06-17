@@ -1,12 +1,12 @@
 import Layout from 'components/Layout/Layout';
-import InfoPage from 'components/InfoPage/InfoPage';
+import Info from 'components/Info/Info';
 
-function Info(): JSX.Element {
+function InfoPage(): JSX.Element {
   return (
     <Layout title="Информация - НПП Реставрационный центр">
-      <InfoPage />
+      <Info />
     </Layout>
   );
 }
 
-export default Info;
+export default InfoPage;

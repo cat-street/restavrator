@@ -19,9 +19,9 @@ const AboutSection = (): JSX.Element => (
           <h2 className={styles.about__heading}>Как нас найти</h2>
           <ul className={styles.about__links}>
             <li>
-              Адрес:
-              {' '}
+              Адрес:{' '}
               <a
+                className={styles.about__link}
                 href="https://yandex.ru/maps/-/CCQ6rXsA-C"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -30,24 +30,27 @@ const AboutSection = (): JSX.Element => (
               </a>
             </li>
             <li>
-              Телефон:
-              {' '}
-              <a href="tel:+74957644232">+7 (495) 764-42-32</a>
+              Телефон:{' '}
+              <a className={styles.about__link} href="tel:+74957644232">
+                +7 (495) 764-42-32
+              </a>
             </li>
             <li>
-              Телефон:
-              {' '}
-              <a href="tel:+79161238862">+7-916-123-88-62</a>
+              Телефон:{' '}
+              <a className={styles.about__link} href="tel:+79161238862">
+                +7-916-123-88-62
+              </a>
             </li>
             <li>
-              Телефон:
-              {' '}
-              <a href="tel:+79857644232">+7-985-764-42-32</a>
+              Телефон:{' '}
+              <a className={styles.about__link} href="tel:+79857644232">
+                +7-985-764-42-32
+              </a>
             </li>
             <li>
-              Email:
-              {' '}
+              Email:{' '}
               <a
+                className={styles.about__link}
                 href="mailto:resproekt@yandex.ru"
                 target="_blank"
                 rel="noreferrer noopener"

@@ -25,23 +25,45 @@
     margin-bottom: 8px;
   }
 
-  &_type_books {
-    grid-template-columns: repeat(4, 1fr);
+  &__title {
+    font-weight: 500;
+  }
 
-    .previews__image-container {
-      border: 1px solid $slight-border;
+  &_type {
+    &_books {
+      grid-template-columns: repeat(4, 1fr);
 
-      aspect-ratio: 1 / 1;
+      .previews__image-container {
+        border: 1px solid $slight-border;
+        aspect-ratio: 1 / 1;
+      }
+    }
+
+    &_projects {
+      grid-template-columns: repeat(3, 1fr);
+
+      .previews__image-container {
+        aspect-ratio: 3 / 2;
+      }
     }
   }
 }
 
 @supports not (aspect-ratio: 1 / 1) {
   .previews {
-    &_type_books {
-      .previews__image-container {
-        height: 0;
-        padding-bottom: 100%;
+    &_type {
+      &_books {
+        .previews__image-container {
+          height: 0;
+          padding-bottom: 100%;
+        }
+      }
+
+      &_projects {
+        .previews__image-container {
+          height: 0;
+          padding-bottom: 66.6%;
+        }
       }
     }
   }

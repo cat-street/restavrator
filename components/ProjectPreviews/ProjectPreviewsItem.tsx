@@ -25,7 +25,11 @@ const ProjectPreviewsItem = ({ project, category }: Props): JSX.Element => (
         </a>
       </Link>
     </div>
-    <Link href={`/${category}/${project.id}`}>{project.title}</Link>
+    <Link href={`/${category}/${project.id}`}>
+      <a href={`/${category}/${project.id}`} className={styles.previews__title}>
+        {project.title}
+      </a>
+    </Link>
   </li>
 );
 

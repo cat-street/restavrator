@@ -14,6 +14,9 @@ export interface Project {
   id: string;
   cover: string;
   title: string;
+  register?: string;
+  address?: string;
+  type?: string;
   description?: string;
   images: GalleryImage[];
 }

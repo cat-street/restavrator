@@ -1,6 +1,6 @@
 import ContentContainer from 'components/ContentContainer/ContentContainer';
 
-import styles from './InfoPage.module.scss';
+import styles from './Info.module.scss';
 
 const InfoOrder = (): JSX.Element => (
   <section className={styles.info}>

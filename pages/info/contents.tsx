@@ -1,4 +1,4 @@
-import InfoContents from 'components/InfoPage/InfoContents';
+import InfoContents from 'components/Info/InfoContents';
 import Layout from 'components/Layout/Layout';
 
 function Contents(): JSX.Element {

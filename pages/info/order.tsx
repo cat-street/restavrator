@@ -1,4 +1,4 @@
-import InfoOrder from 'components/InfoPage/InfoOrder';
+import InfoOrder from 'components/Info/InfoOrder';
 import Layout from 'components/Layout/Layout';
 
 function Order(): JSX.Element {

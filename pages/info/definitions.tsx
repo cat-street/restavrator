@@ -1,4 +1,4 @@
-import InfoDefinitions from 'components/InfoPage/InfoDefinitions';
+import InfoDefinitions from 'components/Info/InfoDefinitions';
 import Layout from 'components/Layout/Layout';
 
 function Definitions(): JSX.Element {

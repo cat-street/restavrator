@@ -1,3 +1,5 @@
+import parse from 'html-react-parser';
+
 import ContentContainer from 'components/ContentContainer/ContentContainer';
 import SectionLesserTitle from 'components/SectionLesserTitle/SectionLesserTitle';
 import Gallery from 'components/Gallery/Gallery';
@@ -19,11 +21,9 @@ const SingleProject = ({ item }: Props): JSX.Element => (
         {item.register && (<p><strong>Название в реестре: </strong> {item.register}</p>)}
         <p className={styles.project__type}>{item.type}</p>
       </div>
-      <p
-        className={styles.project__description}
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: item.description }}
-      />
+      <p className={styles.project__description}>
+        {parse(item.description)}
+      </p>
       <Gallery gallery={item.images} type="rectangle" />
     </ContentContainer>
   </section>

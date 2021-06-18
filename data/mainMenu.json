@@ -11,14 +11,14 @@
           "link": "/projects",
           "sub": [
             { "name": "Дипломированные проекты", "link": "/projects/diploma" },
-            { "name": "Примеры проектов", "link": "/projects/samples" }
+            { "name": "Примеры проектов", "link": "/projects/sample" }
           ]
         },
         {
           "name": "Исследования",
           "link": "/research",
           "sub": [
-            { "name": "Примеры исследований", "link": "/research/samples" }
+            { "name": "Примеры исследований", "link": "/research/sample" }
           ]
         },
         { "name": "Публикации", "link": "/books" }

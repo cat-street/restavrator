@@ -1,7 +1,7 @@
 import Layout from 'components/Layout/Layout';
 import ProjectPreviews from 'components/ProjectPreviews/ProjectPreviews';
 
-import projects from 'data/projectsDiploma.json';
+import diplomaProjects from 'data/projectsDiploma.json';
 
 function DiplomaProjectsPage(): JSX.Element {
   return (
@@ -10,7 +10,7 @@ function DiplomaProjectsPage(): JSX.Element {
         title="Дипломированные проекты"
         category="projects"
         subCategory="diploma"
-        projects={projects.items}
+        projects={diplomaProjects.items}
       />
     </Layout>
   );

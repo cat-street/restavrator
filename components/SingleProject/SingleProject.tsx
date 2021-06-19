@@ -21,9 +21,9 @@ const SingleProject = ({ item }: Props): JSX.Element => (
         {item.register && (<p><strong>Название в реестре: </strong> {item.register}</p>)}
         <p className={styles.project__type}>{item.type}</p>
       </div>
-      <p className={styles.project__description}>
+      <div className={styles.project__description}>
         {parse(item.description)}
-      </p>
+      </div>
       <Gallery gallery={item.images} type="rectangle" />
     </ContentContainer>
   </section>

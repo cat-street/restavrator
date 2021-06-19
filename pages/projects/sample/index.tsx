@@ -3,7 +3,7 @@ import ProjectPreviews from 'components/ProjectPreviews/ProjectPreviews';
 
 import sampleProjects from 'data/projectsSample.json';
 
-function DiplomaProjectsPage(): JSX.Element {
+function SampleProjectsPage(): JSX.Element {
   return (
     <Layout title="Примеры проектов - НПП Реставрационный центр">
       <ProjectPreviews
@@ -16,4 +16,4 @@ function DiplomaProjectsPage(): JSX.Element {
   );
 }
 
-export default DiplomaProjectsPage;
+export default SampleProjectsPage;

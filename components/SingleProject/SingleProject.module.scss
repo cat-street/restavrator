@@ -8,8 +8,10 @@
   }
 
   &__description {
-    font-size: $font-size * 1.1;
     margin: $font-size 0 $font-size * 2;
+
+    font-size: $font-size * 1.1;
+    text-align: justify;
   }
 
   &__type {

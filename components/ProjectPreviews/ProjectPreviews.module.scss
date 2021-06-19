@@ -39,7 +39,7 @@
       }
     }
 
-    &_projects {
+    &_projects, &_research {
       grid-template-columns: repeat(3, 1fr);
 
       .previews__image-container {
@@ -59,7 +59,7 @@
         }
       }
 
-      &_projects {
+      &_projects, &_research {
         .previews__image-container {
           height: 0;
           padding-bottom: 66.6%;

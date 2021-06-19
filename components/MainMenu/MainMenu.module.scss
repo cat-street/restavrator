@@ -17,10 +17,13 @@
   }
 
   &__link {
+    display: flex;
+    align-items: center;
     height: 100%;
+    box-sizing: border-box;
+
     padding: 0 12px;
     margin: 0;
-    box-sizing: border-box;
 
     border: 1px solid transparent;
     border-radius: 4px;
@@ -33,11 +36,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    cursor: pointer;
     transition: color 200ms;
 
     &:hover {
       color: $main-accent;
+      border-bottom-color: transparent;
     }
 
     &:focus-visible {
@@ -78,10 +81,11 @@
 
     border: 0;
     background-color: transparent;
+
+    color: $main-text;
     font-family: inherit;
     font-size: inherit;
     transition: all 200ms ease-out;
-    cursor: pointer;
 
     &:hover, &:focus-visible {
       background-color: $main-accent;

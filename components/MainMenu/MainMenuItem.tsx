@@ -22,12 +22,6 @@ const MainMenuItem = ({ item }: Props): JSX.Element => {
     setSubMenuVisible(false);
   };
 
-  const itemButton = (
-    <button type="button" className={styles['main-menu__link']}>
-      {item.name}
-    </button>
-  );
-
   return (
     <li
       className={styles['main-menu__item']}
@@ -41,10 +35,14 @@ const MainMenuItem = ({ item }: Props): JSX.Element => {
           href={item.link}
           activeClassName={styles['main-menu__link_active']}
         >
-          {itemButton}
+          <a href={item.link} className={styles['main-menu__link']}>
+            {item.name}
+          </a>
         </ActiveLink>
       ) : (
-        itemButton
+        <button type="button" className={styles['main-menu__link']}>
+          {item.name}
+        </button>
       )}
       {item.sub && <SubMenu items={item.sub} visible={subMenuVisible} />}
     </li>

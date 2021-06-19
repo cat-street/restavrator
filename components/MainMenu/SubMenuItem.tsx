@@ -10,23 +10,28 @@ type Props = {
 
 const SubMenuItem = ({ item }: Props): JSX.Element => (
   <li className={styles['sub-menu__item']}>
-    <Link href={item.link as string}>
-      <button
-        type="button"
-        className={`${styles['sub-menu__link']} ${styles['sub-menu__link_accent']}`}
-      >
-        {item.name}
-      </button>
-    </Link>
+    {item.link && (
+      <Link href={item.link}>
+        <a
+          href={item.link}
+          className={`${styles['sub-menu__link']} ${styles['sub-menu__link_accent']}`}
+        >
+          {item.name}
+        </a>
+      </Link>
+    )}
+
     {item.sub && (
       <ul>
         {item.sub.map((el) => (
           <li key={el.name}>
-            <Link href={el.link as string}>
-              <button type="button" className={styles['sub-menu__link']}>
-                {el.name}
-              </button>
-            </Link>
+            {el.link && (
+              <Link href={el.link}>
+                <a href={el.link} className={styles['sub-menu__link']}>
+                  {el.name}
+                </a>
+              </Link>
+            )}
           </li>
         ))}
       </ul>

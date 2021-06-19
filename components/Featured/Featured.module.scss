@@ -28,6 +28,8 @@
 
   &__image {
     @extend %zoom-effect;
+
+    cursor: pointer;
   }
 
   &__text {

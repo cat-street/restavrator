@@ -24,6 +24,7 @@ const Header = ({ transparent }: Props): JSX.Element => {
   };
 
   useEffect(() => {
+    fillHeader();
     window.addEventListener('scroll', fillHeader);
     return () => window.removeEventListener('scroll', fillHeader);
   }, [fillHeader]);

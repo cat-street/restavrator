@@ -3,15 +3,16 @@ import Link from 'next/link';
 
 import { MenuItem } from 'types';
 
-// import SubMenu from './SubMenu';
+import MobileSubMenu from './MobileSubMenu';
 
 import styles from './MobileMenu.module.scss';
 
 type Props = {
   item: MenuItem;
+  onClick: () => void;
 };
 
-const MobileMenuItem = ({ item }: Props): JSX.Element => {
+const MobileMenuItem = ({ item, onClick }: Props): JSX.Element => {
   const [subMenuVisible, setSubMenuVisible] = useState(false);
 
   const showSubMenu = () => {
@@ -22,7 +23,11 @@ const MobileMenuItem = ({ item }: Props): JSX.Element => {
     <li className={styles['mobile-menu__item']}>
       {item.link ? (
         <Link href={item.link}>
-          <a href={item.link} className={styles['mobile-menu__link']}>
+          <a
+            href={item.link}
+            className={styles['mobile-menu__link']}
+            onClick={onClick}
+          >
             {item.name}
           </a>
         </Link>
@@ -37,7 +42,13 @@ const MobileMenuItem = ({ item }: Props): JSX.Element => {
           {item.name}
         </button>
       )}
-      {/* {item.sub && <SubMenu items={item.sub} visible={subMenuVisible} />} */}
+      {item.sub && (
+        <MobileSubMenu
+          items={item.sub}
+          visible={subMenuVisible}
+          onClick={onClick}
+        />
+      )}
     </li>
   );
 };

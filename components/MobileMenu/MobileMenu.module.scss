@@ -24,7 +24,6 @@
     &__link {
       display: flex;
       height: 100%;
-      box-sizing: border-box;
 
       padding: 12px;
 
@@ -64,6 +63,75 @@
       &_active {
         background-color: $menu-bg-darker;
       }
+    }
+  }
+
+  &__close {
+    padding: 0;
+    margin-left: auto;
+    display: block;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+
+    &-icon {
+      width: 28px;
+      height: 28px;
+      color: rgba($main-bright, .5);
+
+      &:hover {
+        color: $main-bright;
+      }
+    }
+  }
+}
+
+.mobile-sub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: $gap / 3;
+  padding: 0 20px;
+
+  background-color: $menu-bg-darker;
+  transition: all 400ms ease-out;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  &_visible {
+    max-height: 600px;
+    padding: 12px 20px;
+
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__link {
+    display: block;
+    padding: 8px 0;
+
+    border: 0;
+    background-color: transparent;
+
+    color: $main-bright;
+    font-family: inherit;
+    font-size: inherit;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      color: $main-accent;
+    }
+
+    &:focus-visible {
+      @include focus-outline($main-bright);
+    }
+
+    &_accent {
+      width: max-content;
+      text-transform: uppercase;
+      font-weight: 600;
     }
   }
 }

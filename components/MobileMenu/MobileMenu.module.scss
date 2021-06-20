@@ -3,6 +3,10 @@
 .mobile-menu {
   display: none;
 
+  &__button {
+    display: none;
+  }
+
   @include mediaMax('lg') {
     width: 300px;
     height: 100vh;
@@ -48,7 +52,7 @@
       }
     }
 
-    &__button {
+    &__button-item {
       width: 100%;
       justify-content: space-between;
 
@@ -64,25 +68,27 @@
         background-color: $menu-bg-darker;
       }
     }
-  }
 
-  &__close {
-    padding: 0;
-    margin-left: auto;
-    display: block;
+    &__button {
+      padding: 0;
+      margin-left: auto;
+      display: block;
 
-    background-color: transparent;
-    border: 0;
+      background-color: transparent;
+      border: 0;
 
-    cursor: pointer;
+      cursor: pointer;
 
-    &-icon {
-      width: 28px;
-      height: 28px;
-      color: rgba($main-bright, .5);
+      &-icon {
+        width: 28px;
+        height: 28px;
 
-      &:hover {
-        color: $main-bright;
+        color: rgba($main-bright, .5);
+        transition: all 200ms ease-out;
+
+        &:hover {
+          color: $main-bright;
+        }
       }
     }
   }

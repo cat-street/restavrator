@@ -16,6 +16,7 @@ import {
   faCaretLeft,
   faCaretRight,
   faMobileAlt,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
 
 import 'styles/variables.scss';
@@ -34,6 +35,7 @@ library.add(
   faBuilding,
   faEnvelope,
   faMobileAlt,
+  faBars,
 );
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {

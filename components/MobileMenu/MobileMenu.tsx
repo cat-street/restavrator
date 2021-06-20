@@ -8,7 +8,7 @@ import MobileMenuItem from './MobileMenuItem';
 import styles from './MobileMenu.module.scss';
 
 const MobileMenu = (): JSX.Element => {
-  const [menuVisible, setMenuVisible] = useState(true);
+  const [menuVisible, setMenuVisible] = useState(false);
 
   const showMenu = () => {
     setMenuVisible(!menuVisible);
@@ -16,16 +16,16 @@ const MobileMenu = (): JSX.Element => {
 
   return (
     <>
-      {menuVisible && (
+      {menuVisible ? (
         <nav className={styles['mobile-menu']}>
           <button
             onClick={showMenu}
             type="button"
-            className={styles['mobile-menu__close']}
+            className={styles['mobile-menu__button']}
           >
             <FontAwesomeIcon
               icon={['fas', 'times']}
-              className={styles['mobile-menu__close-icon']}
+              className={styles['mobile-menu__button-icon']}
             />
           </button>
           <ul className={styles['mobile-menu__list']}>
@@ -34,6 +34,17 @@ const MobileMenu = (): JSX.Element => {
             ))}
           </ul>
         </nav>
+      ) : (
+        <button
+          onClick={showMenu}
+          type="button"
+          className={styles['mobile-menu__button']}
+        >
+          <FontAwesomeIcon
+            icon={['fas', 'bars']}
+            className={styles['mobile-menu__button-icon']}
+          />
+        </button>
       )}
     </>
   );

@@ -36,7 +36,7 @@ const MobileMenuItem = ({ item, onClick }: Props): JSX.Element => {
           type="button"
           onClick={showSubMenu}
           className={`${styles['mobile-menu__link']} ${
-            styles['mobile-menu__button']
+            styles['mobile-menu__button-item']
           } ${subMenuVisible && styles['mobile-menu__button_active']} `}
         >
           {item.name}

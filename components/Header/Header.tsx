@@ -5,6 +5,7 @@ import ContentContainer from 'components/ContentContainer/ContentContainer';
 import MainMenu from 'components/MainMenu/MainMenu';
 
 import styles from './Header.module.scss';
+import MobileMenu from 'components/MobileMenu/MobileMenu';
 
 type Props = {
   transparent: boolean;
@@ -42,6 +43,7 @@ const Header = ({ transparent }: Props): JSX.Element => {
             </button>
           </Link>
           <MainMenu />
+          <MobileMenu />
         </div>
       </ContentContainer>
     </header>

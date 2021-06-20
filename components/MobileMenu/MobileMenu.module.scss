@@ -1,0 +1,69 @@
+@import 'styles/variables.scss';
+
+.mobile-menu {
+  display: none;
+
+  @include mediaMax('lg') {
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+
+    padding: $gap / 2;
+
+    background-color: $menu-bg;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: $gap / 4;
+    }
+
+    &__link {
+      display: flex;
+      height: 100%;
+      box-sizing: border-box;
+
+      padding: 12px;
+
+      border: 1px solid transparent;
+      border-radius: 4px;
+
+      color: $main-bright;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      transition: color 200ms;
+
+      &:hover {
+        color: $main-accent;
+        border-bottom-color: transparent;
+      }
+
+      &:focus-visible {
+        @include focus-outline($main-bright);
+      }
+    }
+
+    &__button {
+      width: 100%;
+      justify-content: space-between;
+
+      background-color: transparent;
+      font-family: inherit;
+      cursor: pointer;
+
+      &::after {
+        content: '▼';
+      }
+
+      &_active {
+        background-color: $menu-bg-darker;
+      }
+    }
+  }
+}

@@ -6,6 +6,10 @@
   display: flex;
   align-items: center;
 
+  @include mediaMax('lg') {
+    display: none;
+  }
+
   &__list {
     height: 100%;
     display: flex;

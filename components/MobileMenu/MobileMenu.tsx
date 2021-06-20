@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import CSSTransition from 'react-transition-group/CSSTransition';
 
 import mainMenu from 'data/mainMenu.json';
 
@@ -16,7 +17,17 @@ const MobileMenu = (): JSX.Element => {
 
   return (
     <>
-      {menuVisible ? (
+      <CSSTransition
+        in={menuVisible}
+        timeout={200}
+        mountOnEnter
+        unmountOnExit
+        classNames={{
+          enter: styles.hidden,
+          enterActive: styles.visible,
+          exitActive: styles.hidden,
+        }}
+      >
         <nav className={styles['mobile-menu']}>
           <button
             onClick={showMenu}
@@ -34,7 +45,9 @@ const MobileMenu = (): JSX.Element => {
             ))}
           </ul>
         </nav>
-      ) : (
+      </CSSTransition>
+
+      {!menuVisible && (
         <button
           onClick={showMenu}
           type="button"

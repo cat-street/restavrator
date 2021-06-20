@@ -10,13 +10,14 @@
   @include mediaMax('lg') {
     width: 300px;
     height: 100vh;
+    padding: $gap / 2;
+
     position: absolute;
     top: 0;
     right: 0;
     display: block;
 
-    padding: $gap / 2;
-
+    transition: all 200ms linear;
     background-color: $menu-bg;
 
     &__list {
@@ -140,4 +141,14 @@
       font-weight: 600;
     }
   }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(300px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
 }

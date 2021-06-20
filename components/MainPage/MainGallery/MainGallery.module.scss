@@ -2,4 +2,8 @@
 
 .main-gallery {
   padding: $vertical-padding 16px;
+
+  @include mediaMax('lg') {
+    padding: $vertical-padding / 2 16px;
+  }
 }

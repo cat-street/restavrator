@@ -2,12 +2,16 @@
 
 .hero {
   width: 100%;
-  padding: ($vertical-padding * 2.5) $side-padding;
+  padding: $vertical-padding * 2.5 $side-padding;
   display: flex;
   justify-content: center;
   align-items: center;
 
   background: url('/images/moscow_hero.jpg') 50% 20% / cover no-repeat;
+
+  @include mediaMax('lg') {
+    padding: $vertical-padding * 2 $side-padding / 2 $vertical-padding;
+  }
 
   &__text {
     text-align: center;
@@ -21,21 +25,33 @@
 
     background-color: $main-accent;
     font-weight: 700;
-    font-size: ($font-size * 2.5);
+    font-size: $font-size * 2.5;
     text-transform: uppercase;
+
+    @include mediaMax('md') {
+      font-size: $font-size * 1.5;
+    }
   }
 
   &__subtitle {
     margin: 6px 0 0;
 
-    font-size: ($font-size * 3.75);
+    font-size: $font-size * 3.75;
     font-weight: 400;
     text-transform: uppercase;
+
+    @include mediaMax('md') {
+      font-size: $font-size * 2;
+    }
   }
 
   &__age {
     margin: 32px 0;
 
-    font-size: ($font-size * 1.25);
+    font-size: $font-size * 1.25;
+
+    @include mediaMax('md') {
+      font-size: $font-size;
+    }
   }
 }

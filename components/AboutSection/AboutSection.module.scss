@@ -7,12 +7,16 @@
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: $gap;
+
+    @include mediaMax('lg') {
+      gap: $gap / 1.5;
+    }
   }
 
   &__column {
-    min-width: 300px;
+    min-width: 280px;
   }
 
   &__heading {

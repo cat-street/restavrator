@@ -6,12 +6,14 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: $gap;
   }
 
   &__item {
     flex: 1;
+    min-width: 300px;
     max-width: 500px;
 
     background-color: #fff;

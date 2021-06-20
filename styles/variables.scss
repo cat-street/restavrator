@@ -54,4 +54,8 @@ $sizes: (
 
 %module-padding {
   padding: $vertical-padding $side-padding;
+
+  @include mediaMax('lg') {
+    padding: $vertical-padding / 1.5 $side-padding / 2;
+  }
 }

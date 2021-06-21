@@ -50,5 +50,9 @@
   &_size_regular {
     padding: 12px 36px;
     font-size: 18px;
+
+    @include mediaMax('md') {
+      padding: 12px;
+    }
   }
 }

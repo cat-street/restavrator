@@ -37,9 +37,10 @@ const Gallery = ({ type, gallery }: Props): JSX.Element => {
       <ul className={`${styles.gallery} ${styles[`gallery_type_${type}`]}`}>
         {gallery.map((el, i) => (
           <GalleryItem
+            key={el.id}
             url={el.url}
             text={el.text}
-            key={el.id}
+            type={type}
             onClick={() => handleClick(i)}
           />
         ))}

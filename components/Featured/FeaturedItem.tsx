@@ -13,20 +13,19 @@ type Props = {
 
 const FeaturedItem = ({ item }: Props): JSX.Element => (
   <li className={styles.featured__item}>
-    <div className={styles['featured__image-container']}>
-      <Link href={item.url}>
-        <a href={item.url}>
-          <Image
-            src={item.cover}
-            alt={item.alt}
-            className={styles.featured__image}
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
-        </a>
-      </Link>
-    </div>
+    <Link href={item.url}>
+      <a href={item.url} className={styles['featured__image-container']}>
+        <Image
+          src={item.cover}
+          alt={item.alt}
+          className={styles.featured__image}
+          layout="intrinsic"
+          width="600"
+          height="400"
+          priority
+        />
+      </a>
+    </Link>
 
     <div className={styles.featured__text}>
       <Link href={item.url}>

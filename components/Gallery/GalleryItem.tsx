@@ -6,19 +6,22 @@ import styles from './Gallery.module.scss';
 type Props = {
   url: string;
   text?: string;
+  type: string;
   onClick: () => void;
 };
 
-const GalleryItem = ({ url, text, onClick }: Props): JSX.Element => (
+const GalleryItem = ({
+  url, text, type, onClick,
+}: Props): JSX.Element => (
   <li>
     <div className={styles['gallery__image-container']}>
       <Image
         src={url}
         alt={text}
         className={styles.gallery__image}
-        objectFit="cover"
-        layout="fill"
-        priority
+        layout="intrinsic"
+        width="600"
+        height={type === 'square' ? 600 : 400}
       />
       <button
         type="button"

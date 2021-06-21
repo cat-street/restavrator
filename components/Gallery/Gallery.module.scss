@@ -22,7 +22,8 @@
 
   &__image-container {
     position: relative;
-    width: 100%;
+
+    font-size: 0;
   }
 
   &__text {
@@ -31,6 +32,8 @@
 
   &__overlay {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -51,19 +54,6 @@
   &__overlay-icon {
     width: 50px;
     color: #fff;
-  }
-
-  &_type {
-    &_square {
-      .gallery__image-container {
-        aspect-ratio: 1 / 1;
-      }
-    }
-    &_rectangle {
-      .gallery__image-container {
-        aspect-ratio: 3 / 2;
-      }
-    }
   }
 }
 
@@ -199,25 +189,6 @@
     &_close {
       width: 24px;
       margin: 6px 0;
-    }
-  }
-}
-
-@supports not (aspect-ratio: 1 / 1) {
-  .gallery {
-    &_type {
-      &_square {
-        .gallery__image-container {
-          height: 0;
-          padding-bottom: 100%;
-        }
-      }
-      &_rectangle {
-        .gallery__image-container {
-          height: 0;
-          padding-bottom: 66.6%;
-        }
-      }
     }
   }
 }

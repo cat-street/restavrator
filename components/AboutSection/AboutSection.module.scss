@@ -7,16 +7,31 @@
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: $gap;
 
     @include mediaMax('lg') {
       gap: $gap / 1.5;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mediaMax('md') {
+      grid-template-columns: auto;
     }
   }
 
   &__column {
-    min-width: 280px;
+    min-width: 272px;
+
+    &:last-child {
+      @include mediaMax('lg') {
+        grid-column: 1 / 3;
+      }
+
+      @include mediaMax('md') {
+        grid-column: auto;
+      }
+    }
   }
 
   &__heading {
@@ -34,5 +49,12 @@
 
   &__link {
     color: $main-accent;
+  }
+
+  &__map {
+    @include mediaMax('sm') {
+      margin-left: -24px;
+      margin-right: -24px;
+    }
   }
 }

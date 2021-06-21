@@ -37,6 +37,18 @@
         border: 1px solid $slight-border;
         aspect-ratio: 1 / 1;
       }
+
+      @include mediaMax('xl') {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include mediaMax('lg') {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mediaMax('sm') {
+        grid-template-columns: auto;
+      }
     }
 
     &_projects, &_research {
@@ -44,6 +56,14 @@
 
       .previews__image-container {
         aspect-ratio: 3 / 2;
+      }
+
+      @include mediaMax('lg') {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mediaMax('sm') {
+        grid-template-columns: auto;
       }
     }
   }

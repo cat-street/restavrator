@@ -47,18 +47,16 @@ const MobileMenu = (): JSX.Element => {
         </nav>
       </CSSTransition>
 
-      {!menuVisible && (
-        <button
-          onClick={showMenu}
-          type="button"
-          className={styles['mobile-menu__button']}
-        >
-          <FontAwesomeIcon
-            icon={['fas', 'bars']}
-            className={styles['mobile-menu__button-icon']}
-          />
-        </button>
-      )}
+      <button
+        onClick={showMenu}
+        type="button"
+        className={styles['mobile-menu__button']}
+      >
+        <FontAwesomeIcon
+          icon={['fas', 'bars']}
+          className={styles['mobile-menu__button-icon']}
+        />
+      </button>
     </>
   );
 };

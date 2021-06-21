@@ -21,7 +21,8 @@ const GalleryItem = ({
         className={styles.gallery__image}
         layout="intrinsic"
         width="600"
-        height={type === 'square' ? 600 : 400}
+        height={type === 'square' ? 600 : 395}
+        quality="60"
       />
       <button
         type="button"

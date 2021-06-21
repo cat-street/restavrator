@@ -30,9 +30,10 @@ const ProjectPreviewsItem = ({
           src={project.cover}
           alt={project.title}
           className={styles.previews__image}
-          layout="intrinsic"
           width="600"
-          height={category === 'books' ? 600 : 400}
+          height={category === 'books' ? 600 : 395}
+          layout="intrinsic"
+          quality="60"
         />
       </a>
     </Link>

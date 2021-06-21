@@ -21,7 +21,8 @@ const FeaturedItem = ({ item }: Props): JSX.Element => (
           className={styles.featured__image}
           layout="intrinsic"
           width="600"
-          height="400"
+          height="395"
+          quality="60"
           priority
         />
       </a>

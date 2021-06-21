@@ -8,6 +8,15 @@
     grid-template-columns: 450px 1fr;
     align-items: start;
     gap: $gap;
+
+    @include mediaMax('lg') {
+      grid-template-columns: 300px 1fr;
+      gap: $gap / 2;
+    }
+
+    @include mediaMax('md') {
+      grid-template-columns: auto;
+    }
   }
 
   &__text {

@@ -50,6 +50,12 @@ $sizes: (
 
 %section-padding {
   padding: $vertical-padding * 1.5 $side-padding $vertical-padding;
+
+  @include mediaMax('lg') {
+    padding-left: $side-padding / 2;
+    padding-right: $side-padding / 2;
+    padding-bottom: $vertical-padding / 1.5;
+  }
 }
 
 %module-padding {

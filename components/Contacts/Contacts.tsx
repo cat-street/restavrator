@@ -57,7 +57,9 @@ const Contacts = (): JSX.Element => (
             </ContactItem>
           </ul>
         </div>
-        <YaMaps width="100%" height="480" />
+        <div className={styles.contacts__map}>
+          <YaMaps width="100%" height="100%" />
+        </div>
       </div>
     </ContentContainer>
   </section>

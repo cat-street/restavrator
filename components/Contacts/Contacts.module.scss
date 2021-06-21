@@ -8,6 +8,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: $gap / 2;
+
+    @include mediaMax('sm') {
+      grid-template-columns: auto;
+    }
   }
 
   &__list {
@@ -35,5 +39,15 @@
   &__item-text {
     margin: 0;
     line-height: 1.5;
+  }
+
+  &__map {
+    height: 480px;
+
+    @include mediaMax('sm') {
+      height: 320px;
+      margin-left: -$side-padding / 2;
+      margin-right: -$side-padding / 2;
+    }
   }
 }

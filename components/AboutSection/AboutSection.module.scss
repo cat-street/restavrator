@@ -53,8 +53,8 @@
 
   &__map {
     @include mediaMax('sm') {
-      margin-left: -24px;
-      margin-right: -24px;
+      margin-left: -$side-padding / 2;
+      margin-right: -$side-padding / 2;
     }
   }
 }

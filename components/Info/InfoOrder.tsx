@@ -1,13 +1,14 @@
 import ContentContainer from 'components/ContentContainer/ContentContainer';
+import SectionLesserTitle from 'components/SectionLesserTitle/SectionLesserTitle';
 
 import styles from './Info.module.scss';
 
 const InfoOrder = (): JSX.Element => (
   <section className={styles.info}>
     <ContentContainer>
-      <h2 className={styles.info__header}>
+      <SectionLesserTitle>
         Последовательность разработки научно-проектной документации
-      </h2>
+      </SectionLesserTitle>
       <div className={styles.info__columns}>
         <div>
           <p>

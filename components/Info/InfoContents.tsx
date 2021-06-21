@@ -1,15 +1,16 @@
 import Link from 'next/link';
 
 import ContentContainer from 'components/ContentContainer/ContentContainer';
+import SectionLesserTitle from 'components/SectionLesserTitle/SectionLesserTitle';
 
 import styles from './Info.module.scss';
 
 const InfoDefinitions = (): JSX.Element => (
   <section className={styles.info}>
     <ContentContainer>
-      <h2 className={styles.info__header}>
+      <SectionLesserTitle>
         Состав и содержание научно-проектной документации
-      </h2>
+      </SectionLesserTitle>
       <div className={styles.info__columns}>
         <div>
           <p>
@@ -48,10 +49,10 @@ const InfoDefinitions = (): JSX.Element => (
           </p>
           <p>
             Раздел <strong>&quot;Предварительные работы&quot;</strong> содержит{' '}
-            <Link href="/info/steps#ird">исходно-разрешительные материалы</Link> и
-            результаты предварительного исследования памятника при ознакомлении
-            с памятником и имеющимися о нем материалами, а также следующие
-            материалы:
+            <Link href="/info/steps#ird">исходно-разрешительные материалы</Link>{' '}
+            и результаты предварительного исследования памятника при
+            ознакомлении с памятником и имеющимися о нем материалами, а также
+            следующие материалы:
           </p>
           <ul>
             <li>программу научно-исследовательских работ;</li>
@@ -115,9 +116,9 @@ const InfoDefinitions = (): JSX.Element => (
         </div>
         <div>
           <p>
-            <strong>Натурные исследования</strong>, проводимые в рамках отдельных
-            разделов комплексных научных исследований, включают: обмерные
-            чертежи; акты исследований по зондажам, шурфам, вскрытиям
+            <strong>Натурные исследования</strong>, проводимые в рамках
+            отдельных разделов комплексных научных исследований, включают:
+            обмерные чертежи; акты исследований по зондажам, шурфам, вскрытиям
             конструкций; результаты исследований монументальной живописи,
             предметов внутреннего убранства; исследования строительных и
             отделочных материалов; результаты экспериментальных исследований и

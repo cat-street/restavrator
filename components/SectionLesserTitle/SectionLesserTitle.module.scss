@@ -7,4 +7,12 @@
   font-size: $header-size;
   font-weight: 400;
   border-bottom: 1px solid $slight-border;
+
+  @include mediaMax('md') {
+    font-size: $header-size * .9;
+  }
+
+  @include mediaMax('sm') {
+    font-size: $header-size * .75;
+  }
 }

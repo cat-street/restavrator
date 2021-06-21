@@ -1,13 +1,14 @@
 import Link from 'next/link';
 
 import ContentContainer from 'components/ContentContainer/ContentContainer';
+import SectionLesserTitle from 'components/SectionLesserTitle/SectionLesserTitle';
 
 import styles from './Info.module.scss';
 
 const Info = (): JSX.Element => (
   <section className={styles.info}>
     <ContentContainer>
-      <h2 className={styles.info__header}>Информация</h2>
+      <SectionLesserTitle>Информация</SectionLesserTitle>
       <ul className={styles.info__list}>
         <li>
           <Link href="/info/definitions">Термины и определения</Link>

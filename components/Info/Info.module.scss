@@ -3,15 +3,6 @@
 .info {
   @extend %section-padding;
 
-  &__header {
-    margin: 0;
-    padding-bottom: $font-size * 1.5;
-
-    font-size: $header-size;
-    font-weight: 400;
-    border-bottom: 1px solid $slight-border;
-  }
-
   &__subheader {
     margin: 0;
     padding: $gap 0 $font-size * 2;
@@ -36,11 +27,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: $gap;
+
+    @include mediaMax('md') {
+      grid-template-columns: auto;
+      gap: 0;
+    }
   }
 
   ul {
     list-style: outside;
     padding-left: $font-size * 2;
+
+    @include mediaMax('md') {
+      padding-left: $font-size;
+    }
   }
 
   p {

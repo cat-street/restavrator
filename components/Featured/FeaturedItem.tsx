@@ -22,6 +22,7 @@ const FeaturedItem = ({ item }: Props): JSX.Element => (
             className={styles.featured__image}
             layout="fill"
             objectFit="cover"
+            priority
           />
         </a>
       </Link>

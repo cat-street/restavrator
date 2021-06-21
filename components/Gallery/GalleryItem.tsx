@@ -18,6 +18,7 @@ const GalleryItem = ({ url, text, onClick }: Props): JSX.Element => (
         className={styles.gallery__image}
         objectFit="cover"
         layout="fill"
+        priority
       />
       <button
         type="button"

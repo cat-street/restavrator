@@ -22,6 +22,7 @@ const ProjectPreviewsItem = ({ project, category, subCategory }: Props): JSX.Ele
             className={styles.previews__image}
             objectFit="contain"
             layout="fill"
+            priority
           />
         </a>
       </Link>

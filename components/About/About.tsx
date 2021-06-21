@@ -16,6 +16,7 @@ const About = (): JSX.Element => (
           height="600"
           objectFit="contain"
           alt="Церковь, антикварное фото"
+          priority
         />
         <div>
           <SectionTitle

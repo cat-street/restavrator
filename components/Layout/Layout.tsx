@@ -18,6 +18,22 @@ const Layout = ({
   <>
     <Head>
       <title>{title}</title>
+      <meta property="og:site_name" content="Restavrator.org" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="НПП Реставрационный центр" />
+      <meta
+        name="description"
+        property="og:description"
+        content="НПП Реставрационный центр - реставрация объектов культурного наследия. Исследования, проекты, надзор."
+      />
+      <meta property="og:url" content="https://restavrator.org" />
+      <meta name="image" property="og:image" content="/rc_og.png" />
+      <meta name="author" content="Andrey Kudryavtsev <catlogic@ya.ru>" />
+      <meta
+        name="keywords"
+        content="архитектура, реставрация, реконструкция, памятник, памятники, реставрационный центр, исследования, историко-культурные, историко-архитектурные, проект, проекты, проектные работы, проектирование, обмеры, археология, строительство, объект, объекты, воссоздание, реновация, научные, культурное наследие, новое строительство, дизайн-проект, перепланировка, авторский надзор, генпроектировщик, заказчик, согласование, москомнаследие, мосгорнаследие, предмет охраны, перепланировка, экспертиза"
+      />
+
       <link
         rel="apple-touch-icon"
         sizes="180x180"

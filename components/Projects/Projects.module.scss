@@ -7,6 +7,10 @@
   flex-direction: column;
   gap: $gap;
 
+  @include mediaMax('md') {
+    gap: $gap / 2;
+  }
+
   &-container {
     padding-top: $vertical-padding;
   }
@@ -14,7 +18,13 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: $gap;
+
+    @include mediaMax('md') {
+      flex-direction: column;
+      gap: $gap / 2;
+    }
   }
 
   &__element {
@@ -66,6 +76,10 @@
   background-repeat: no-repeat;
 
   border-bottom: 1px solid $main-text;
+
+  @include mediaMax('sm') {
+    height: 250px;
+  }
 
   &_type {
     &_projects {

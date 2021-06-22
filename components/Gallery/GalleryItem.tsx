@@ -1,33 +1,24 @@
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './Gallery.module.scss';
 
 type Props = {
-  url: string;
+  thumb: string,
   text?: string;
-  type: string;
   onClick: () => void;
 };
 
 const GalleryItem = ({
-  url, text, type, onClick,
+  thumb, text, onClick,
 }: Props): JSX.Element => (
   <li>
     <div className={styles['gallery__image-container']}>
-      <Image
-        src={url}
-        alt={text}
-        className={styles.gallery__image}
-        layout="intrinsic"
-        width="600"
-        height={type === 'square' ? 600 : 395}
-        quality="60"
-      />
+      <img src={thumb} alt={text} className={styles.gallery__image} />
       <button
         type="button"
         className={styles.gallery__overlay}
         onClick={onClick}
+        aria-label="zoom image"
       >
         <FontAwesomeIcon
           icon={['fas', 'search']}

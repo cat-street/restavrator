@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import ContentContainer from 'components/ContentContainer/ContentContainer';
 import SectionTitle from 'components/SectionTitle/SectionTitle';
 
@@ -9,14 +7,10 @@ const About = (): JSX.Element => (
   <section className={styles.about}>
     <ContentContainer>
       <div className={styles.about__container}>
-        <Image
+        <img
           className={styles.about__image}
           src="/images/about_us.jpg"
-          width="450"
-          height="600"
-          objectFit="contain"
           alt="Церковь, антикварное фото"
-          priority
         />
         <div>
           <SectionTitle

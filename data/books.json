@@ -2,161 +2,193 @@
   "items": [
     {
       "id": "b01",
-      "cover": "/images/books/book_01_01.jpg",
+      "cover": "/images/books/thumb/book_01_01.jpg",
       "title": "Москва, которая есть. 100 примеров научной реставрации XXI века",
       "description": "Издание Департамента культурного наследия г. Москвы (2012 г.)",
       "images": [
         {
           "id": "b01_001",
-          "url": "/images/books/book_01_01.jpg"
+          "url": "/images/books/book_01_01.jpg",
+          "thumb": "/images/books/thumb/book_01_01.jpg"
         },
         {
           "id": "b01_002",
-          "url": "/images/books/book_01_02.jpg"
+          "url": "/images/books/book_01_02.jpg",
+          "thumb": "/images/books/thumb/book_01_02.jpg"
         },
         {
           "id": "b01_003",
-          "url": "/images/books/book_01_03.jpg"
+          "url": "/images/books/book_01_03.jpg",
+          "thumb": "/images/books/thumb/book_01_03.jpg"
         },
         {
           "id": "b01_004",
-          "url": "/images/books/book_01_04.jpg"
+          "url": "/images/books/book_01_04.jpg",
+          "thumb": "/images/books/thumb/book_01_04.jpg"
         },
         {
           "id": "b01_005",
-          "url": "/images/books/book_01_05.jpg"
+          "url": "/images/books/book_01_05.jpg",
+          "thumb": "/images/books/thumb/book_01_05.jpg"
         },
         {
           "id": "b01_006",
-          "url": "/images/books/book_01_06.jpg"
+          "url": "/images/books/book_01_06.jpg",
+          "thumb": "/images/books/thumb/book_01_06.jpg"
         },
         {
           "id": "b01_007",
-          "url": "/images/books/book_01_07.jpg"
+          "url": "/images/books/book_01_07.jpg",
+          "thumb": "/images/books/thumb/book_01_07.jpg"
         },
         {
           "id": "b01_008",
-          "url": "/images/books/book_01_08.jpg"
+          "url": "/images/books/book_01_08.jpg",
+          "thumb": "/images/books/thumb/book_01_08.jpg"
         },
         {
           "id": "b01_009",
-          "url": "/images/books/book_01_09.jpg"
+          "url": "/images/books/book_01_09.jpg",
+          "thumb": "/images/books/thumb/book_01_09.jpg"
         },
         {
           "id": "b01_010",
-          "url": "/images/books/book_01_10.jpg"
+          "url": "/images/books/book_01_10.jpg",
+          "thumb": "/images/books/thumb/book_01_10.jpg"
         },
         {
           "id": "b01_011",
-          "url": "/images/books/book_01_11.jpg"
+          "url": "/images/books/book_01_11.jpg",
+          "thumb": "/images/books/thumb/book_01_11.jpg"
         },
         {
           "id": "b01_012",
-          "url": "/images/books/book_01_12.jpg"
+          "url": "/images/books/book_01_12.jpg",
+          "thumb": "/images/books/thumb/book_01_12.jpg"
         },
         {
           "id": "b01_013",
-          "url": "/images/books/book_01_13.jpg"
+          "url": "/images/books/book_01_13.jpg",
+          "thumb": "/images/books/thumb/book_01_13.jpg"
         }
       ]
     },
     {
       "id": "b02",
-      "cover": "/images/books/book_02_01.jpg",
+      "cover": "/images/books/thumb/book_02_01.jpg",
       "title": "Москва, которая есть. Лучшие примеры реставрации XXI века (2013)",
       "description": "Издание Департамента культурного наследия г. Москвы (Выпуск 2, 2013 г.)",
       "images": [
         {
           "id": "b02_001",
-          "url": "/images/books/book_02_01.jpg"
+          "url": "/images/books/book_02_01.jpg",
+          "thumb": "/images/books/thumb/book_02_01.jpg"
         },
         {
           "id": "b02_002",
-          "url": "/images/books/book_02_02.jpg"
+          "url": "/images/books/book_02_02.jpg",
+          "thumb": "/images/books/thumb/book_02_02.jpg"
         },
         {
           "id": "b02_003",
-          "url": "/images/books/book_02_03.jpg"
+          "url": "/images/books/book_02_03.jpg",
+          "thumb": "/images/books/thumb/book_02_03.jpg"
         },
         {
           "id": "b02_004",
-          "url": "/images/books/book_02_04.jpg"
+          "url": "/images/books/book_02_04.jpg",
+          "thumb": "/images/books/thumb/book_02_04.jpg"
         }
       ]
     },
     {
       "id": "b03",
-      "cover": "/images/books/book_03_01.jpg",
+      "cover": "/images/books/thumb/book_03_01.jpg",
       "title": "Москва, которая есть. Лучшие примеры реставрации XXI века (2014)",
       "description": "Издание Департамента культурного наследия г. Москвы (выпуск 3, 2014 г.)",
       "images": [
         {
           "id": "b03_001",
-          "url": "/images/books/book_03_01.jpg"
+          "url": "/images/books/book_03_01.jpg",
+          "thumb": "/images/books/thumb/book_03_01.jpg"
         },
         {
           "id": "b03_002",
-          "url": "/images/books/book_03_02.jpg"
+          "url": "/images/books/book_03_02.jpg",
+          "thumb": "/images/books/thumb/book_03_02.jpg"
         },
         {
           "id": "b03_003",
-          "url": "/images/books/book_03_03.jpg"
+          "url": "/images/books/book_03_03.jpg",
+          "thumb": "/images/books/thumb/book_03_03.jpg"
         },
         {
           "id": "b03_004",
-          "url": "/images/books/book_03_04.jpg"
+          "url": "/images/books/book_03_04.jpg",
+          "thumb": "/images/books/thumb/book_03_04.jpg"
         },
         {
           "id": "b03_005",
-          "url": "/images/books/book_03_05.jpg"
+          "url": "/images/books/book_03_05.jpg",
+          "thumb": "/images/books/thumb/book_03_05.jpg"
         },
         {
           "id": "b03_006",
-          "url": "/images/books/book_03_06.jpg"
+          "url": "/images/books/book_03_06.jpg",
+          "thumb": "/images/books/thumb/book_03_06.jpg"
         },
         {
           "id": "b03_007",
-          "url": "/images/books/book_03_07.jpg"
+          "url": "/images/books/book_03_07.jpg",
+          "thumb": "/images/books/thumb/book_03_07.jpg"
         },
         {
           "id": "b03_008",
-          "url": "/images/books/book_03_08.jpg"
+          "url": "/images/books/book_03_08.jpg",
+          "thumb": "/images/books/thumb/book_03_08.jpg"
         },
         {
           "id": "b03_009",
-          "url": "/images/books/book_03_09.jpg"
+          "url": "/images/books/book_03_09.jpg",
+          "thumb": "/images/books/thumb/book_03_09.jpg"
         },
         {
           "id": "b03_010",
-          "url": "/images/books/book_03_10.jpg"
+          "url": "/images/books/book_03_10.jpg",
+          "thumb": "/images/books/thumb/book_03_10.jpg"
         }
       ]
     },
     {
       "id": "b04",
-      "cover": "/images/books/book_04_01.jpg",
+      "cover": "/images/books/thumb/book_04_01.jpg",
       "title": "Москва, которая есть. Примеры научной реставрации 2011 - 2017",
       "description": "Издание Департамента культурного наследия г. Москвы (2017 г.)",
       "images": [
         {
           "id": "b04_001",
-          "url": "/images/books/book_04_01.jpg"
+          "url": "/images/books/book_04_01.jpg",
+          "thumb": "/images/books/thumb/book_04_01.jpg"
         },
         {
           "id": "b04_002",
-          "url": "/images/books/book_04_02.jpg"
+          "url": "/images/books/book_04_02.jpg",
+          "thumb": "/images/books/thumb/book_04_02.jpg"
         },
         {
           "id": "b04_003",
-          "url": "/images/books/book_04_03.jpg"
+          "url": "/images/books/book_04_03.jpg",
+          "thumb": "/images/books/thumb/book_04_03.jpg"
         },
         {
           "id": "b04_004",
-          "url": "/images/books/book_04_04.jpg"
+          "url": "/images/books/book_04_04.jpg",
+          "thumb": "/images/books/thumb/book_04_04.jpg"
         },
         {
           "id": "b04_005",
-          "url": "/images/books/book_04_05.jpg"
+          "url": "/images/books/book_04_05.jpg",
+          "thumb": "/images/books/thumb/book_04_05.jpg"
         }
       ]
     }

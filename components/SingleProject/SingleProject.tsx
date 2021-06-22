@@ -24,7 +24,7 @@ const SingleProject = ({ item }: Props): JSX.Element => (
       <div className={styles.project__description}>
         {parse(item.description)}
       </div>
-      <Gallery gallery={item.images} type="rectangle" />
+      <Gallery gallery={item.images} />
     </ContentContainer>
   </section>
 );

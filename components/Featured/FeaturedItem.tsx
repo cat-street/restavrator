@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import Button from 'components/Button/Button';
@@ -15,16 +14,7 @@ const FeaturedItem = ({ item }: Props): JSX.Element => (
   <li className={styles.featured__item}>
     <Link href={item.url}>
       <a href={item.url} className={styles['featured__image-container']}>
-        <Image
-          src={item.cover}
-          alt={item.alt}
-          className={styles.featured__image}
-          layout="intrinsic"
-          width="600"
-          height="395"
-          quality="60"
-          priority
-        />
+        <img src={item.cover} alt={item.alt} className={styles.featured__image} />
       </a>
     </Link>
 

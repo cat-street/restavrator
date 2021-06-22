@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Project } from 'types';
@@ -26,15 +25,7 @@ const ProjectPreviewsItem = ({
         }`}
         className={styles['previews__image-container']}
       >
-        <Image
-          src={project.cover}
-          alt={project.title}
-          className={styles.previews__image}
-          width="600"
-          height={category === 'books' ? 600 : 395}
-          layout="intrinsic"
-          quality="60"
-        />
+        <img src={project.cover} alt={project.title} className={styles.previews__image} />
       </a>
     </Link>
     <Link href={`/${category}/${project.id}`}>

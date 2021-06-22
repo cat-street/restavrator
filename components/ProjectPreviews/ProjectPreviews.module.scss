@@ -16,6 +16,10 @@
 
   &__image {
     @extend %zoom-effect;
+
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
   }
 
   &__image-container {

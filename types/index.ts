@@ -7,6 +7,7 @@ export interface MenuItem {
 export interface GalleryImage {
   id: string;
   url: string;
+  thumb: string;
   text?: string;
 }
 

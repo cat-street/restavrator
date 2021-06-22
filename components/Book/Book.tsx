@@ -18,7 +18,7 @@ const Book = ({ item }: Props): JSX.Element => (
     <ContentContainer>
       <SectionLesserTitle>{item.title}</SectionLesserTitle>
       <p className={styles['book-page__description']}>{item.description}</p>
-      <Gallery gallery={item.images} type="square" />
+      <Gallery gallery={item.images} />
       <div className={styles['book-page__back-container']}>
         <Link href="/books">
           <Button buttonStyles={['button_style_regular', 'button_size_small']}>

@@ -2,7 +2,7 @@
   "items": [
     {
       "id": "fp01",
-      "cover": "/images/projects/diploma/les_01.jpg",
+      "cover": "/images/feat_diploma.jpg",
       "title": "Дипломированные проекты",
       "alt": "Проект - Музей леса",
       "url": "/projects/diploma",
@@ -10,7 +10,7 @@
     },
     {
       "id": "fp02",
-      "cover": "/images/projects/sample/bnik2_01.jpg",
+      "cover": "/images/feat_project.jpg",
       "title": "Примеры проектов",
       "alt": "Проект - Городская усадьба, 1-я пол. XIX в.",
       "url": "/projects/sample",

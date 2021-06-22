@@ -8,11 +8,10 @@ import GalleryItem from './GalleryItem';
 import styles from './Gallery.module.scss';
 
 type Props = {
-  type: string;
   gallery: GalleryImage[];
 };
 
-const Gallery = ({ type, gallery }: Props): JSX.Element => {
+const Gallery = ({ gallery }: Props): JSX.Element => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -34,13 +33,12 @@ const Gallery = ({ type, gallery }: Props): JSX.Element => {
         onClose={handleClose}
         setImage={setCurrentImageIndex}
       />
-      <ul className={`${styles.gallery} ${styles[`gallery_type_${type}`]}`}>
+      <ul className={styles.gallery}>
         {gallery.map((el, i) => (
           <GalleryItem
             key={el.id}
-            url={el.url}
+            thumb={el.thumb}
             text={el.text}
-            type={type}
             onClick={() => handleClick(i)}
           />
         ))}

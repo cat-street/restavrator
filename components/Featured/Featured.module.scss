@@ -18,18 +18,21 @@
 
     background-color: #fff;
     border-radius: 7px;
-    overflow: hidden;
   }
 
   &__image-container {
     display: block;
 
-    font-size: 0;
     border: 0;
+    overflow: hidden;
   }
 
   &__image {
     @extend %zoom-effect;
+
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
   }
 
   &__text {

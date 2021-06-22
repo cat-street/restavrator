@@ -2,7 +2,7 @@
   "items": [
     {
       "id": "s01",
-      "cover": "/images/projects/sample/nrog_01.jpg",
+      "cover": "/images/projects/sample/thumb/nrog_01.jpg",
       "title": "Административное здание (Новорогожская ул.)",
       "register": "",
       "address": "Москва, ул. Новорогожская, д. 11, стр. 1",
@@ -11,17 +11,19 @@
       "images": [
         {
           "id": "s01_001",
-          "url": "/images/projects/sample/nrog_01.jpg"
+          "url": "/images/projects/sample/nrog_01.jpg",
+          "thumb": "/images/projects/sample/thumb/nrog_01.jpg"
         },
         {
           "id": "s01_002",
-          "url": "/images/projects/sample/nrog_02.jpg"
+          "url": "/images/projects/sample/nrog_02.jpg",
+          "thumb": "/images/projects/sample/thumb/nrog_02.jpg"
         }
       ]
     },
     {
       "id": "s02",
-      "cover": "/images/projects/sample/sol_01.jpg",
+      "cover": "/images/projects/sample/thumb/sol_01.jpg",
       "title": "Главный дом городской усадьбы (ул. Александра Солженицына)",
       "register": "",
       "address": "Москва, ул. Александра Солженицына, д. 8, стр. 1",
@@ -30,17 +32,19 @@
       "images": [
         {
           "id": "s02_001",
-          "url": "/images/projects/sample/sol_01.jpg"
+          "url": "/images/projects/sample/sol_01.jpg",
+          "thumb": "/images/projects/sample/thumb/sol_01.jpg"
         },
         {
           "id": "s02_002",
-          "url": "/images/projects/sample/sol_02.jpg"
+          "url": "/images/projects/sample/sol_02.jpg",
+          "thumb": "/images/projects/sample/thumb/sol_02.jpg"
         }
       ]
     },
     {
       "id": "s03",
-      "cover": "/images/projects/sample/ord_01.jpg",
+      "cover": "/images/projects/sample/thumb/ord_01.jpg",
       "title": "Дом, начало XVIII в. с палатами XVII в. (ул. Большая Ордынка)",
       "register": "Дом, начало XVIII в. с палатами XVII в.",
       "address": "Москва, ул. Большая Ордынка, д. 7, стр. 2",
@@ -49,29 +53,34 @@
       "images": [
         {
           "id": "s03_001",
-          "url": "/images/projects/sample/ord_01.jpg"
+          "url": "/images/projects/sample/ord_01.jpg",
+          "thumb": "/images/projects/sample/thumb/ord_01.jpg"
         },
         {
           "id": "s03_002",
-          "url": "/images/projects/sample/ord_02.jpg"
+          "url": "/images/projects/sample/ord_02.jpg",
+          "thumb": "/images/projects/sample/thumb/ord_02.jpg"
         },
         {
           "id": "s03_003",
-          "url": "/images/projects/sample/ord_03.jpg"
+          "url": "/images/projects/sample/ord_03.jpg",
+          "thumb": "/images/projects/sample/thumb/ord_03.jpg"
         },
         {
           "id": "s03_004",
-          "url": "/images/projects/sample/ord_04.jpg"
+          "url": "/images/projects/sample/ord_04.jpg",
+          "thumb": "/images/projects/sample/thumb/ord_04.jpg"
         },
         {
           "id": "s03_005",
-          "url": "/images/projects/sample/ord_05.jpg"
+          "url": "/images/projects/sample/ord_05.jpg",
+          "thumb": "/images/projects/sample/thumb/ord_05.jpg"
         }
       ]
     },
     {
       "id": "s04",
-      "cover": "/images/projects/sample/kam_01.jpg",
+      "cover": "/images/projects/sample/thumb/kam_01.jpg",
       "title": "Главный дом городской усадьбы А.А.Каменецкого (ул. Большая Полянка)",
       "register": "Главный дом городской усадьбы А.А.Каменецкого",
       "address": "Москва, ул. Большая Полянка, д. 13, стр. 1",
@@ -80,21 +89,24 @@
       "images": [
         {
           "id": "s04_001",
-          "url": "/images/projects/sample/kam_01.jpg"
+          "url": "/images/projects/sample/kam_01.jpg",
+          "thumb": "/images/projects/sample/thumb/kam_01.jpg"
         },
         {
           "id": "s04_002",
-          "url": "/images/projects/sample/kam_02.jpg"
+          "url": "/images/projects/sample/kam_02.jpg",
+          "thumb": "/images/projects/sample/thumb/kam_02.jpg"
         },
         {
           "id": "s04_003",
-          "url": "/images/projects/sample/kam_03.jpg"
+          "url": "/images/projects/sample/kam_03.jpg",
+          "thumb": "/images/projects/sample/thumb/kam_03.jpg"
         }
       ]
     },
     {
       "id": "s05",
-      "cover": "/images/projects/sample/dobr_01.jpg",
+      "cover": "/images/projects/sample/thumb/dobr_01.jpg",
       "title": "Доброслободские бани",
       "register": "Доброслободские бани",
       "address": "Москва, ул. Доброслободская, д. 19, стр. 1",
@@ -103,17 +115,19 @@
       "images": [
         {
           "id": "s05_001",
-          "url": "/images/projects/sample/dobr_01.jpg"
+          "url": "/images/projects/sample/dobr_01.jpg",
+          "thumb": "/images/projects/sample/thumb/dobr_01.jpg"
         },
         {
           "id": "s05_002",
-          "url": "/images/projects/sample/dobr_02.jpg"
+          "url": "/images/projects/sample/dobr_02.jpg",
+          "thumb": "/images/projects/sample/thumb/dobr_02.jpg"
         }
       ]
     },
     {
       "id": "s06",
-      "cover": "/images/projects/sample/kad12_01.jpg",
+      "cover": "/images/projects/sample/thumb/kad12_01.jpg",
       "title": "Главный дом городской усадьбы (2-й Кадашевский пер.)",
       "register": "Главный дом городской усадьбы",
       "address": "Москва, 2-й Кадашевский пер., д. 12, стр. 1",
@@ -122,13 +136,14 @@
       "images": [
         {
           "id": "s06_001",
-          "url": "/images/projects/sample/kad12_01.jpg"
+          "url": "/images/projects/sample/kad12_01.jpg",
+          "thumb": "/images/projects/sample/thumb/kad12_01.jpg"
         }
       ]
     },
     {
       "id": "s07",
-      "cover": "/images/projects/sample/bar_01.jpg",
+      "cover": "/images/projects/sample/thumb/bar_01.jpg",
       "title": "Главный дом городской усадьбы Барятинских (ул. Малая Полянка)",
       "register": "Городская усадьба Барятинских, сер. XVIII в. - 1-я пол. XX в. Главный дом, сер. XVIII в. - XIX в., 1-я пол. XX в.",
       "address": "Москва, ул. Малая Полянка, д. 11, стр. 1",
@@ -137,29 +152,34 @@
       "images": [
         {
           "id": "s07_001",
-          "url": "/images/projects/sample/bar_01.jpg"
+          "url": "/images/projects/sample/bar_01.jpg",
+          "thumb": "/images/projects/sample/thumb/bar_01.jpg"
         },
         {
           "id": "s07_002",
-          "url": "/images/projects/sample/bar_02.jpg"
+          "url": "/images/projects/sample/bar_02.jpg",
+          "thumb": "/images/projects/sample/thumb/bar_02.jpg"
         },
         {
           "id": "s07_003",
-          "url": "/images/projects/sample/bar_03.jpg"
+          "url": "/images/projects/sample/bar_03.jpg",
+          "thumb": "/images/projects/sample/thumb/bar_03.jpg"
         },
         {
           "id": "s07_004",
-          "url": "/images/projects/sample/bar_04.jpg"
+          "url": "/images/projects/sample/bar_04.jpg",
+          "thumb": "/images/projects/sample/thumb/bar_04.jpg"
         },
         {
           "id": "s07_005",
-          "url": "/images/projects/sample/bar_05.jpg"
+          "url": "/images/projects/sample/bar_05.jpg",
+          "thumb": "/images/projects/sample/thumb/bar_05.jpg"
         }
       ]
     },
     {
       "id": "s08",
-      "cover": "/images/projects/sample/kad3_01.jpg",
+      "cover": "/images/projects/sample/thumb/kad3_01.jpg",
       "title": "Дом жилой, XVII - XIX вв. (1-й Кадашевский пер.)",
       "register": "Дом жилой, XVII - XIX вв.",
       "address": "Москва, 1-й Кадашевский пер., д. 10, стр. 3",
@@ -168,29 +188,34 @@
       "images": [
         {
           "id": "s08_001",
-          "url": "/images/projects/sample/kad3_01.jpg"
+          "url": "/images/projects/sample/kad3_01.jpg",
+          "thumb": "/images/projects/sample/thumb/kad3_01.jpg"
         },
         {
           "id": "s08_002",
-          "url": "/images/projects/sample/kad3_02.jpg"
+          "url": "/images/projects/sample/kad3_02.jpg",
+          "thumb": "/images/projects/sample/thumb/kad3_02.jpg"
         },
         {
           "id": "s08_003",
-          "url": "/images/projects/sample/kad3_03.jpg"
+          "url": "/images/projects/sample/kad3_03.jpg",
+          "thumb": "/images/projects/sample/thumb/kad3_03.jpg"
         },
         {
           "id": "s08_004",
-          "url": "/images/projects/sample/kad3_04.jpg"
+          "url": "/images/projects/sample/kad3_04.jpg",
+          "thumb": "/images/projects/sample/thumb/kad3_04.jpg"
         },
         {
           "id": "s08_005",
-          "url": "/images/projects/sample/kad3_05.jpg"
+          "url": "/images/projects/sample/kad3_05.jpg",
+          "thumb": "/images/projects/sample/thumb/kad3_05.jpg"
         }
       ]
     },
     {
       "id": "s09",
-      "cover": "/images/projects/sample/kad2_01.jpg",
+      "cover": "/images/projects/sample/thumb/kad2_01.jpg",
       "title": "Палаты в Кадашевской слободе, XVII в. (1-й Кадашевский пер.)",
       "register": "Палаты в Кадашевской слободе, XVII в.",
       "address": "Москва, 1-й Кадашевский пер., д. 10, стр. 2",
@@ -199,25 +224,29 @@
       "images": [
         {
           "id": "s09_001",
-          "url": "/images/projects/sample/kad2_01.jpg"
+          "url": "/images/projects/sample/kad2_01.jpg",
+          "thumb": "/images/projects/sample/thumb/kad2_01.jpg"
         },
         {
           "id": "s09_002",
-          "url": "/images/projects/sample/kad2_02.jpg"
+          "url": "/images/projects/sample/kad2_02.jpg",
+          "thumb": "/images/projects/sample/thumb/kad2_02.jpg"
         },
         {
           "id": "s09_003",
-          "url": "/images/projects/sample/kad2_03.jpg"
+          "url": "/images/projects/sample/kad2_03.jpg",
+          "thumb": "/images/projects/sample/thumb/kad2_03.jpg"
         },
         {
           "id": "s09_004",
-          "url": "/images/projects/sample/kad2_04.jpg"
+          "url": "/images/projects/sample/kad2_04.jpg",
+          "thumb": "/images/projects/sample/thumb/kad2_04.jpg"
         }
       ]
     },
     {
       "id": "s10",
-      "cover": "/images/projects/sample/shab_03.jpg",
+      "cover": "/images/projects/sample/thumb/shab_03.jpg",
       "title": "Храм Живоначальной Троицы на Шаболовке",
       "register": "Храм Троицы Живоначальной на Шаболовке, 1840-1843 гг., 1885-1895 гг., архитекторы Н.И. Козловский, Н.В. Никитин, М.П. Иванов.",
       "address": "Москва, ул. Шаболовка, д. 21, стр. 1",
@@ -226,29 +255,34 @@
       "images": [
         {
           "id": "s10_001",
-          "url": "/images/projects/sample/shab_01.jpg"
+          "url": "/images/projects/sample/shab_01.jpg",
+          "thumb": "/images/projects/sample/thumb/shab_01.jpg"
         },
         {
           "id": "s10_002",
-          "url": "/images/projects/sample/shab_02.jpg"
+          "url": "/images/projects/sample/shab_02.jpg",
+          "thumb": "/images/projects/sample/thumb/shab_02.jpg"
         },
         {
           "id": "s10_003",
-          "url": "/images/projects/sample/shab_03.jpg"
+          "url": "/images/projects/sample/shab_03.jpg",
+          "thumb": "/images/projects/sample/thumb/shab_03.jpg"
         },
         {
           "id": "s10_004",
-          "url": "/images/projects/sample/shab_04.jpg"
+          "url": "/images/projects/sample/shab_04.jpg",
+          "thumb": "/images/projects/sample/thumb/shab_04.jpg"
         },
         {
           "id": "s10_005",
-          "url": "/images/projects/sample/shab_05.jpg"
+          "url": "/images/projects/sample/shab_05.jpg",
+          "thumb": "/images/projects/sample/thumb/shab_05.jpg"
         }
       ]
     },
     {
       "id": "s11",
-      "cover": "/images/projects/sample/gran_01.jpg",
+      "cover": "/images/projects/sample/thumb/gran_01.jpg",
       "title": "Дом Леонтьевых (Гранатный пер.)",
       "register": "Дом Леонтьевых, начало XIX в., архитектор А.Г. Григорьев.",
       "address": "Москва, Гранатный пер., д. 4, стр. 1",
@@ -257,25 +291,29 @@
       "images": [
         {
           "id": "s11_001",
-          "url": "/images/projects/sample/gran_01.jpg"
+          "url": "/images/projects/sample/gran_01.jpg",
+          "thumb": "/images/projects/sample/thumb/gran_01.jpg"
         },
         {
           "id": "s11_002",
-          "url": "/images/projects/sample/gran_02.jpg"
+          "url": "/images/projects/sample/gran_02.jpg",
+          "thumb": "/images/projects/sample/thumb/gran_02.jpg"
         },
         {
           "id": "s11_003",
-          "url": "/images/projects/sample/gran_03.jpg"
+          "url": "/images/projects/sample/gran_03.jpg",
+          "thumb": "/images/projects/sample/thumb/gran_03.jpg"
         },
         {
           "id": "s11_004",
-          "url": "/images/projects/sample/gran_04.jpg"
+          "url": "/images/projects/sample/gran_04.jpg",
+          "thumb": "/images/projects/sample/thumb/gran_04.jpg"
         }
       ]
     },
     {
       "id": "s12",
-      "cover": "/images/projects/sample/nkisl_01.jpg",
+      "cover": "/images/projects/sample/thumb/nkisl_01.jpg",
       "title": "Городская усадьба, 1-я пол. XIX в. - Флигель (Нижний Кисловский пер.)",
       "register": "Городская усадьба, XIX в. – Флигель, XIX в. Здесь в 1868 г. жил и работал писатель Л.Н.Толстой.",
       "address": "Москва, Нижний Кисловский пер., д. 6, стр. 2",
@@ -284,25 +322,29 @@
       "images": [
         {
           "id": "s12_001",
-          "url": "/images/projects/sample/nkisl_01.jpg"
+          "url": "/images/projects/sample/nkisl_01.jpg",
+          "thumb": "/images/projects/sample/thumb/nkisl_01.jpg"
         },
         {
           "id": "s12_002",
-          "url": "/images/projects/sample/nkisl_02.jpg"
+          "url": "/images/projects/sample/nkisl_02.jpg",
+          "thumb": "/images/projects/sample/thumb/nkisl_02.jpg"
         },
         {
           "id": "s12_003",
-          "url": "/images/projects/sample/nkisl_03.jpg"
+          "url": "/images/projects/sample/nkisl_03.jpg",
+          "thumb": "/images/projects/sample/thumb/nkisl_03.jpg"
         },
         {
           "id": "s12_004",
-          "url": "/images/projects/sample/nkisl_04.jpg"
+          "url": "/images/projects/sample/nkisl_04.jpg",
+          "thumb": "/images/projects/sample/thumb/nkisl_04.jpg"
         }
       ]
     },
     {
       "id": "s13",
-      "cover": "/images/projects/sample/bnik1_01.jpg",
+      "cover": "/images/projects/sample/thumb/bnik1_01.jpg",
       "title": "Городская усадьба, 1-я пол. XIX в. - Флигель (ул. Большая Никитская)",
       "register": "Городская усадьба, 1-я пол. XIX в. - Флигель.",
       "address": "Москва, ул. Большая Никитская, д. 44, стр. 3",
@@ -311,29 +353,34 @@
       "images": [
         {
           "id": "s13_001",
-          "url": "/images/projects/sample/bnik1_01.jpg"
+          "url": "/images/projects/sample/bnik1_01.jpg",
+          "thumb": "/images/projects/sample/thumb/bnik1_01.jpg"
         },
         {
           "id": "s13_002",
-          "url": "/images/projects/sample/bnik1_02.jpg"
+          "url": "/images/projects/sample/bnik1_02.jpg",
+          "thumb": "/images/projects/sample/thumb/bnik1_02.jpg"
         },
         {
           "id": "s13_003",
-          "url": "/images/projects/sample/bnik1_03.jpg"
+          "url": "/images/projects/sample/bnik1_03.jpg",
+          "thumb": "/images/projects/sample/thumb/bnik1_03.jpg"
         },
         {
           "id": "s13_004",
-          "url": "/images/projects/sample/bnik1_04.jpg"
+          "url": "/images/projects/sample/bnik1_04.jpg",
+          "thumb": "/images/projects/sample/thumb/bnik1_04.jpg"
         },
         {
           "id": "s13_005",
-          "url": "/images/projects/sample/bnik1_05.jpg"
+          "url": "/images/projects/sample/bnik1_05.jpg",
+          "thumb": "/images/projects/sample/thumb/bnik1_05.jpg"
         }
       ]
     },
     {
       "id": "s14",
-      "cover": "/images/projects/sample/bnik2_01.jpg",
+      "cover": "/images/projects/sample/thumb/bnik2_01.jpg",
       "title": "Городская усадьба, 1-я пол. XIX в. - Главный дом (ул. Большая Никитская)",
       "register": "Городская усадьба, 1-я пол. XIX в. - Главный дом",
       "address": "Москва, ул. Большая Никитская, д. 44, стр. 2",
@@ -342,19 +389,23 @@
       "images": [
         {
           "id": "s14_001",
-          "url": "/images/projects/sample/bnik2_01.jpg"
+          "url": "/images/projects/sample/bnik2_01.jpg",
+          "thumb": "/images/projects/sample/thumb/bnik2_01.jpg"
         },
         {
           "id": "s14_002",
-          "url": "/images/projects/sample/bnik2_02.jpg"
+          "url": "/images/projects/sample/bnik2_02.jpg",
+          "thumb": "/images/projects/sample/thumb/bnik2_02.jpg"
         },
         {
           "id": "s14_003",
-          "url": "/images/projects/sample/bnik2_03.jpg"
+          "url": "/images/projects/sample/bnik2_03.jpg",
+          "thumb": "/images/projects/sample/thumb/bnik2_03.jpg"
         },
         {
           "id": "s14_004",
-          "url": "/images/projects/sample/bnik2_04.jpg"
+          "url": "/images/projects/sample/bnik2_04.jpg",
+          "thumb": "/images/projects/sample/thumb/bnik2_04.jpg"
         }
       ]
     }

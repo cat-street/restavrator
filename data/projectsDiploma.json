@@ -2,7 +2,7 @@
   "items": [
     {
       "id": "d01",
-      "cover": "/images/projects/diploma/ogr_01.jpg",
+      "cover": "/images/projects/diploma/thumb/ogr_01.jpg",
       "title": "Уличная ограда городской усадьбы конца XVIII – начала XIX в.",
       "register": "",
       "address": "Москва, ул. Большая Ордынка, 17",
@@ -11,17 +11,19 @@
       "images": [
         {
           "id": "d01_001",
-          "url": "/images/projects/diploma/ogr_01.jpg"
+          "url": "/images/projects/diploma/ogr_01.jpg",
+          "thumb": "/images/projects/diploma/thumb/ogr_01.jpg"
         },
         {
           "id": "d01_002",
-          "url": "/images/projects/diploma/ogr_02.jpg"
+          "url": "/images/projects/diploma/ogr_02.jpg",
+          "thumb": "/images/projects/diploma/thumb/ogr_02.jpg"
         }
       ]
     },
     {
       "id": "d02",
-      "cover": "/images/projects/diploma/krig_01.jpg",
+      "cover": "/images/projects/diploma/thumb/krig_01.jpg",
       "title": "Кригскомиссариат и Военно-хозяйственные склады",
       "register": "Кригскомиссариат, 1778 - 1780 гг., арх. Н.Н.Легран. / Военно-хозяйственные склады, конец XVIII в. Склады старого двора.",
       "address": "Москва, Космодамианская наб., д. 24, стр. 1 / Москва, ул. Садовническая, д. 59, стр. 1, 2",
@@ -30,17 +32,19 @@
       "images": [
         {
           "id": "d02_001",
-          "url": "/images/projects/diploma/krig_01.jpg"
+          "url": "/images/projects/diploma/krig_01.jpg",
+          "thumb": "/images/projects/diploma/thumb/krig_01.jpg"
         },
         {
           "id": "d02_002",
-          "url": "/images/projects/diploma/krig_02.jpg"
+          "url": "/images/projects/diploma/krig_02.jpg",
+          "thumb": "/images/projects/diploma/thumb/krig_02.jpg"
         }
       ]
     },
     {
       "id": "d03",
-      "cover": "/images/projects/diploma/bol_01.jpg",
+      "cover": "/images/projects/diploma/thumb/bol_01.jpg",
       "title": "Городское лечебное учреждение, начало XX в.",
       "register": "Здание клиники, 1916 г., арх. Мейснер А.Ф.",
       "address": "Москва, Ленинский проспект, д. 17",
@@ -49,25 +53,29 @@
       "images": [
         {
           "id": "d03_001",
-          "url": "/images/projects/diploma/bol_01.jpg"
+          "url": "/images/projects/diploma/bol_01.jpg",
+          "thumb": "/images/projects/diploma/thumb/bol_01.jpg"
         },
         {
           "id": "d03_002",
-          "url": "/images/projects/diploma/bol_02.jpg"
+          "url": "/images/projects/diploma/bol_02.jpg",
+          "thumb": "/images/projects/diploma/thumb/bol_02.jpg"
         },
         {
           "id": "d03_003",
-          "url": "/images/projects/diploma/bol_03.jpg"
+          "url": "/images/projects/diploma/bol_03.jpg",
+          "thumb": "/images/projects/diploma/thumb/bol_03.jpg"
         },
         {
           "id": "d03_004",
-          "url": "/images/projects/diploma/bol_04.jpg"
+          "url": "/images/projects/diploma/bol_04.jpg",
+          "thumb": "/images/projects/diploma/thumb/bol_04.jpg"
         }
       ]
     },
     {
       "id": "d04",
-      "cover": "/images/projects/diploma/les_01.jpg",
+      "cover": "/images/projects/diploma/thumb/les_01.jpg",
       "title": "Жилой дом XIX в. – Музей леса",
       "register": "",
       "address": "Москва, 5-й Монетчиковский пер., д. 4",
@@ -76,25 +84,29 @@
       "images": [
         {
           "id": "d04_001",
-          "url": "/images/projects/diploma/les_01.jpg"
+          "url": "/images/projects/diploma/les_01.jpg",
+          "thumb": "/images/projects/diploma/thumb/les_01.jpg"
         },
         {
           "id": "d04_002",
-          "url": "/images/projects/diploma/les_02.jpg"
+          "url": "/images/projects/diploma/les_02.jpg",
+          "thumb": "/images/projects/diploma/thumb/les_02.jpg"
         },
         {
           "id": "d04_003",
-          "url": "/images/projects/diploma/les_03.jpg"
+          "url": "/images/projects/diploma/les_03.jpg",
+          "thumb": "/images/projects/diploma/thumb/les_03.jpg"
         },
         {
           "id": "d04_004",
-          "url": "/images/projects/diploma/les_04.jpg"
+          "url": "/images/projects/diploma/les_04.jpg",
+          "thumb": "/images/projects/diploma/thumb/les_04.jpg"
         }
       ]
     },
     {
       "id": "d05",
-      "cover": "/images/projects/diploma/hram_01.jpg",
+      "cover": "/images/projects/diploma/thumb/hram_01.jpg",
       "title": "Храм Богоматери Всех Скорбящих Радость",
       "register": "Ансамбль церкви Всех Скорбящих Радости, XVIII - XIX вв. - Церковь Всех Скорбящих, 1792 г., арх. В.И.Баженов. Ротонда перестроена в 1834-1836 гг. по проекту арх. О.И.Бове.",
       "address": "Москва, ул. Большая Ордынка, д. 20",
@@ -103,15 +115,18 @@
       "images": [
         {
           "id": "d05_001",
-          "url": "/images/projects/diploma/hram_01.jpg"
+          "url": "/images/projects/diploma/hram_01.jpg",
+          "thumb": "/images/projects/diploma/thumb/hram_01.jpg"
         },
         {
           "id": "d05_002",
-          "url": "/images/projects/diploma/hram_02.jpg"
+          "url": "/images/projects/diploma/hram_02.jpg",
+          "thumb": "/images/projects/diploma/thumb/hram_02.jpg"
         },
         {
           "id": "d05_003",
-          "url": "/images/projects/diploma/hram_03.jpg"
+          "url": "/images/projects/diploma/hram_03.jpg",
+          "thumb": "/images/projects/diploma/thumb/hram_03.jpg"
         }
       ]
     }

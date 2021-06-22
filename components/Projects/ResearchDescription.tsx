@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './Projects.module.scss';
@@ -66,22 +65,20 @@ const ProjectsDescription = (): JSX.Element => (
         </ul>
       </div>
       <div className={styles.projects__element_size_50}>
-        <Image
+        <img
           src="/images/res_01.png"
           alt="Архивный чертеж"
-          width="600"
-          height="472"
+          className={styles.projects__image}
         />
       </div>
     </div>
 
     <div className={styles.projects__row}>
       <div className={styles.projects__element_size_50}>
-        <Image
+        <img
           src="/images/res_02.jpg"
           alt="Предмет охраны"
-          width="408"
-          height="480"
+          className={styles.projects__image}
         />
       </div>
       <div

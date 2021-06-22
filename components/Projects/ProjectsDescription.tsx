@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './Projects.module.scss';
@@ -41,22 +40,20 @@ const ProjectsDescription = (): JSX.Element => (
         </p>
       </div>
       <div className={styles.projects__element_size_50}>
-        <Image
+        <img
           src="/images/proj_01.png"
           alt="Чертеж проекта"
-          width="500"
-          height="265"
+          className={styles.projects__image}
         />
       </div>
     </div>
 
     <div className={styles.projects__row}>
       <div className={styles.projects__element_size_25}>
-        <Image
+        <img
           src="/images/proj_02.jpg"
           alt="Обложка проекта"
-          width="334"
-          height="450"
+          className={styles.projects__image}
         />
       </div>
       <div
@@ -118,11 +115,10 @@ const ProjectsDescription = (): JSX.Element => (
         </p>
       </div>
       <div className={styles.projects__element_size_25}>
-        <Image
+        <img
           src="/images/proj_03.png"
           alt="План здания"
-          width="450"
-          height="409"
+          className={styles.projects__image}
         />
       </div>
     </div>

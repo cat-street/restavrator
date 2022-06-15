@@ -37,12 +37,6 @@ const AboutSection = (): JSX.Element => (
             </li>
             <li>
               Телефон:{' '}
-              <a className={styles.about__link} href="tel:+79161238862">
-                +7-916-123-88-62
-              </a>
-            </li>
-            <li>
-              Телефон:{' '}
               <a className={styles.about__link} href="tel:+79857644232">
                 +7-985-764-42-32
               </a>
